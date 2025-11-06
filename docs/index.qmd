@@ -31,12 +31,12 @@ filters:
   - ripper
 ---
 
-```{r}
+```{{r}}
 data <- mtcars
 summary(data)
 ```
 
-```{python}
+```{{python}}
 import pandas as pd
 df = pd.DataFrame({"x": [1, 2, 3]})
 ```
