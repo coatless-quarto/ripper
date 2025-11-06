@@ -1,0 +1,351 @@
+---
+title: "Frequently Asked Questions"
+date: "10-31-2025"
+date-modified: last-modified
+engine: markdown
+format: 
+  html:
+    toc: true
+---
+
+# General Information
+
+## What is the {ripper} extension for Quarto?
+
+The `{ripper}` extension for Quarto is a filter that automatically extracts code blocks from 
+your document and splits them by programming language into separate, executable script files.
+It helps you maintain both literate programming documents and standalone scripts from a single source,
+improving code reusability.
+
+## What types of code blocks does {ripper} extract?
+
+The `{ripper}` extension extracts all code blocks with supported language identifiers, including:
+
+- **R code**: Creates `.R` files
+- **Python code**: Creates `.py` files
+- **Julia code**: Creates `.jl` files
+- And 13 other languages (see supported languages below)
+
+All extracted code blocks maintain their original execution order from the document.
+
+# Installation
+
+## How do I install the {ripper} extension?
+
+To install the `ripper` Quarto extension, follow these steps:
+
+1. Open your terminal.
+2. Execute the following command:
+
+```sh
+quarto add coatless-quarto/ripper
+```
+
+Your project structure should look like:
+
+```
+your-project/
+├── _extensions/
+│   └── coatless-quarto/
+│       └── ripper/
+│           ├── _extension.yml
+│           └── ripper.lua
+└── your-document.qmd
+```
+
+## Is the {ripper} extension compatible with all Quarto versions?
+
+The `{ripper}` extension requires Quarto v1.7 or later.
+
+## Do I need to install any additional dependencies?
+
+No additional dependencies are required. The `{ripper}` extension is a pure Lua filter that works with Quarto's built-in Pandoc processing.
+
+# Usage and Customization
+
+## How do I enable the {ripper} extension in my document?
+
+After installing the extension, add it to your document's YAML front matter:
+
+```yaml
+---
+title: "My Analysis"
+filters:
+  - ripper
+---
+```
+
+When you render the document, script files will be automatically created in the same directory as your output file.
+
+## Can I control whether YAML metadata is included in the extracted scripts?
+
+Yes! Use the `include-yaml` option:
+
+```yaml
+---
+title: "My Analysis"
+filters:
+  - ripper
+extensions:
+  ripper:
+    include-yaml: false  # Extracts only code, no YAML data
+---
+```
+
+**Default behavior** (`include-yaml: true`): YAML metadata is included as commented lines at the top of each script.
+
+**Code-only extraction** (`include-yaml: false`): Only the raw code is extracted with no YAML comments.
+
+## How are YAML comments formatted for different languages?
+
+The extension automatically selects the appropriate comment style for each language:
+
+- **Languages using `#'`**: R, Python, Julia, Bash, Ruby, Perl
+- **Languages using `//'`**: JavaScript, TypeScript, Rust, Go, C++, C, Java, Scala, PHP
+- **SQL**: Uses `--'` for comments
+
+For example, in R:
+
+```r
+#' ---
+#' title: My Analysis
+#' ---
+#' 
+```
+
+In JavaScript:
+
+```js
+//' ---
+//' title: My Analysis
+//' ---
+//' 
+```
+
+## Does {ripper} work with all Quarto output formats?
+
+Yes! Since `{ripper}` operates at the Pandoc AST level before format-specific rendering, 
+it works with all Quarto output formats including HTML, PDF, Word, EPUB, and more. The 
+script extraction happens regardless of your document's output format.
+
+## Can I customize the output filename?
+
+The output filename is automatically determined from your source document name. For example:
+
+- `analysis.qmd` → `analysis.R`, `analysis.py`, etc.
+- `report.qmd` → `report.R`, `report.py`, etc.
+
+Currently, custom output filenames require modifying the `ripper.lua` file.
+
+## Can I change the output directory for extracted scripts?
+
+Scripts are created in the same directory as the rendered output file. To change this location, 
+you would need to modify the `ripper.lua` file to specify a different output path.
+
+# Behavior and Features
+
+## What languages are supported?
+
+The extension supports 16 programming languages:
+
+| Language   | Extension | Comment Style |
+|------------|-----------|---------------|
+| R          | `.R`      | `#'`          |
+| Python     | `.py`     | `#'`          |
+| Julia      | `.jl`     | `#'`          |
+| Bash       | `.sh`     | `#'`          |
+| JavaScript | `.js`     | `//'`         |
+| TypeScript | `.ts`     | `//'`         |
+| SQL        | `.sql`    | `--'`         |
+| Rust       | `.rs`     | `//'`         |
+| Go         | `.go`     | `//'`         |
+| C++        | `.cpp`    | `//'`         |
+| C          | `.c`      | `//'`         |
+| Java       | `.java`   | `//'`         |
+| Scala      | `.scala`  | `//'`         |
+| Ruby       | `.rb`     | `#'`          |
+| Perl       | `.pl`     | `#'`          |
+| PHP        | `.php`    | `//'`         |
+
+## Are code chunk options included in the extracted scripts?
+
+No, code chunk options (like `#| label:`, `#| echo:`, `#| warning:`) are **not** included in the extracted scripts.
+These options are processed by Quarto before the Lua filter runs and are not accessible to the filter.
+
+The extension extracts:
+
+- YAML metadata (optional, as comments)
+- Raw code blocks (always)
+- Execution order (preserved)
+
+It does not extract:
+
+- Code chunk options
+- Chunk-level configuration
+
+## How does {ripper} handle multiple code blocks in the same language?
+
+All code blocks in the same language are combined into a single file, separated by blank lines.
+The order is preserved exactly as it appears in your document.
+
+For example, if you have three R code blocks:
+
+```{{r}}
+x <- 1
+```
+
+```{{r}}
+y <- 2
+```
+
+```{{r}}
+z <- x + y
+```
+
+They become one `document.R` file:
+
+```r
+x <- 1
+
+y <- 2
+
+z <- x + y
+```
+
+## What happens if my document has no code blocks?
+
+If no code blocks with supported languages are found, the extension will not create any script files.
+Your document renders normally without any side effects.
+
+## Does {ripper} affect the original document rendering?
+
+No, the original document rendering is completely unchanged. The extension only creates additional
+script files as a side effect of the rendering process. Your HTML, PDF, or other output remain
+exactly as it would be without the extension.
+
+## Can I exclude certain code blocks from being extracted?
+
+The current version extracts all code blocks with supported language identifiers.
+
+Future versions may include built-in exclusion options.
+
+# Troubleshooting
+
+## Script files aren't being created. What should I do?
+
+First, ensure that:
+
+1. The `{ripper}` extension is properly installed in your `_extensions/coatless-quarto/ripper/` directory
+2. You've added `filters: - ripper` to your document's YAML front matter (note the hyphen!)
+3. Your document contains code blocks with supported language identifiers
+4. You have write permissions in the output directory
+5. You're using Quarto v1.7 or later
+
+Check the Quarto rendering output for any error messages from the filter.
+
+## I set `include-yaml: false` but still see comments in my output
+
+Double-check your YAML structure. The configuration must be nested under `extensions.ripper`:
+
+**Correct:**
+
+```yaml
+extensions:
+  ripper:
+    include-yaml: false
+```
+
+**Incorrect:**
+
+```yaml
+ripper:
+  include-yaml: false
+```
+
+## My code blocks have `#|` options but they don't appear in the extracted scripts
+
+This is expected behavior. Code chunk options like `#| label:`, `#| echo:`, and `#| warning:` are processed by
+Quarto before the filter runs and are not accessible for extraction. The filter extracts only
+the actual code content.
+
+## Can I use {ripper} with other Quarto extensions?
+
+Yes, `{ripper}` is designed to work alongside other Quarto extensions. If you encounter conflicts, 
+try adjusting the order of filters in your YAML front matter. Generally, `{ripper}` should be placed
+after filters that modify code blocks.
+
+## The extension creates files but they're empty
+
+Check that your code blocks have the correct language identifier syntax.
+The language must be specified immediately after the opening backticks:
+
+**Correct:**
+````markdown
+```{{r}}
+code here
+```
+````
+
+**Incorrect:**
+````markdown
+``` r
+code here
+```
+````
+
+Also ensure the language identifier matches the supported languages exactly (case-sensitive).
+
+## How can I add support for additional languages?
+
+Edit the `_extensions/coatless-quarto/ripper/ripper.lua` file and add entries to both tables:
+
+```lua
+-- Add file extension
+lang_extensions = {
+  ...
+  matlab = ".m",
+}
+
+-- Add comment style
+comment_styles = {
+  ...
+  matlab = "#'",
+}
+```
+
+After making changes, re-render your document.
+
+# Advanced Usage
+
+## Can I extract code from multiple documents at once?
+
+Yes, simply add the `{ripper}` filter to each document's YAML front matter. Each document
+will generate its own set of script files named after the source document.
+
+## Can I version control the extracted scripts?
+
+Yes, though you may want to add them to `.gitignore` and regenerate them during your build process instead. 
+Since they're automatically generated from your Quarto documents, tracking both can lead to redundant changes.
+
+Alternatively, you can commit them to version control to provide easy access to standalone scripts without 
+requiring Quarto to be installed.
+
+# Support
+
+## Where can I find examples of {ripper} in use?
+
+The extension includes two example documents in the `docs/` directory:
+
+- `qripper-mixed.qmd` - Multiple languages with YAML metadata
+- `qripper-minimal.qmd` - Code-only extraction
+
+Each example includes expected output files in the `docs/` directory.
+
+## How can I contribute to the {ripper} extension?
+
+For bug reports, feature requests, or contributions, please visit the project's repository. Contributions are welcome, including:
+
+- Additional language support
+- New configuration options
+- Documentation improvements
+- Bug fixes and performance enhancements

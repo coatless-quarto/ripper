@@ -1,0 +1,1108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 2521 2911">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #7a0000;
+      }
+
+      .st1 {
+        fill: url(#radial-gradient);
+      }
+
+      .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st11, .st12, .st13, .st14, .st15, .st16, .st17, .st18, .st19, .st20, .st21, .st22, .st23, .st24, .st25, .st26, .st27, .st28, .st29, .st30 {
+        isolation: isolate;
+      }
+
+      .st1, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st11, .st12, .st21, .st22, .st23, .st24, .st25, .st26 {
+        opacity: .9;
+      }
+
+      .st31 {
+        fill: #d5d5d5;
+        stroke: #8b0000;
+      }
+
+      .st31, .st32 {
+        stroke-width: 5px;
+      }
+
+      .st2 {
+        fill: none;
+        stroke: #aaa;
+        stroke-width: 8px;
+      }
+
+      .st2, .st14, .st28 {
+        opacity: .6;
+      }
+
+      .st32 {
+        fill: #e8e8e8;
+        stroke: #999;
+      }
+
+      .st3 {
+        fill: #8b0000;
+        font-size: 450px;
+        letter-spacing: .01em;
+      }
+
+      .st3, .st15 {
+        font-family: Arial-Black, 'Arial Black';
+        font-weight: 800;
+      }
+
+      .st33, .st15 {
+        fill: #b71c1c;
+      }
+
+      .st34, .st13, .st14 {
+        fill: #5a0000;
+      }
+
+      .st35 {
+        fill: #c62828;
+      }
+
+      .st36 {
+        fill: #9a0000;
+      }
+
+      .st4 {
+        fill: url(#radial-gradient7);
+      }
+
+      .st5 {
+        fill: url(#radial-gradient6);
+      }
+
+      .st6 {
+        fill: url(#radial-gradient3);
+      }
+
+      .st7 {
+        fill: url(#radial-gradient9);
+      }
+
+      .st8 {
+        fill: url(#radial-gradient8);
+      }
+
+      .st9 {
+        fill: url(#radial-gradient5);
+      }
+
+      .st10 {
+        fill: url(#radial-gradient4);
+      }
+
+      .st11 {
+        fill: url(#radial-gradient2);
+      }
+
+      .st12 {
+        fill: url(#radial-gradient1);
+      }
+
+      .st13, .st29 {
+        opacity: .5;
+      }
+
+      .st37, .st28, .st29, .st30 {
+        fill: #4a0000;
+      }
+
+      .st15 {
+        font-size: 446px;
+        letter-spacing: .01em;
+      }
+
+      .st16 {
+        fill: #333;
+        font-size: 200px;
+      }
+
+      .st16, .st27 {
+        font-family: CourierNewPS-BoldMT, 'Courier New';
+        font-weight: 700;
+      }
+
+      .st17 {
+        fill: url(#radial-gradient13);
+      }
+
+      .st17, .st18, .st19, .st20 {
+        opacity: .8;
+      }
+
+      .st18 {
+        fill: url(#radial-gradient14);
+      }
+
+      .st19 {
+        fill: url(#radial-gradient16);
+      }
+
+      .st20 {
+        fill: url(#radial-gradient17);
+      }
+
+      .st21 {
+        fill: url(#radial-gradient11);
+      }
+
+      .st22 {
+        fill: url(#radial-gradient12);
+      }
+
+      .st23 {
+        fill: url(#radial-gradient15);
+      }
+
+      .st24 {
+        fill: url(#radial-gradient10);
+      }
+
+      .st25 {
+        fill: url(#radial-gradient18);
+      }
+
+      .st26 {
+        fill: url(#radial-gradient19);
+      }
+
+      .st27 {
+        fill: #1a1a1a;
+        font-size: 100px;
+      }
+
+      .st30 {
+        opacity: .7;
+      }
+      
+      /* Animation: Drip - continuous downward flow with gravity */
+      @keyframes drip {
+        0% { 
+          transform: translateY(0) scaleY(1);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.9;
+        }
+        80% { 
+          transform: translateY(25px) scaleY(1.2);
+          opacity: 0.9;
+        }
+        100% { 
+          transform: translateY(35px) scaleY(1.3);
+          opacity: 0;
+        }
+      }
+      
+      /* Animation: Pulse - gentle throb without bouncing */
+      @keyframes pulse {
+        0% { 
+          transform: scale(1);
+          opacity: 0.85;
+        }
+        50% { 
+          transform: scale(1.08);
+          opacity: 0.95;
+        }
+        100% { 
+          transform: scale(1);
+          opacity: 0.85;
+        }
+      }
+      
+      /* Animation: Splatter - settling downward with rotation */
+      @keyframes splatter {
+        0% { 
+          transform: rotate(0deg) scale(1) translateY(0);
+        }
+        25% { 
+          transform: rotate(2deg) scale(1.03) translateY(1px);
+        }
+        50% {
+          transform: rotate(-1deg) scale(1) translateY(2px);
+        }
+        75% { 
+          transform: rotate(1deg) scale(0.99) translateY(3px);
+        }
+        100% { 
+          transform: rotate(0deg) scale(0.98) translateY(4px);
+        }
+      }
+      
+      /* Animation: Fade - subtle opacity variation */
+      @keyframes fade {
+        0% { 
+          opacity: 0.3;
+        }
+        50% { 
+          opacity: 0.7;
+        }
+        100% { 
+          opacity: 0.3;
+        }
+      }
+      
+      /* Apply drip to main vertical drips */
+      .drip-anim {
+        animation: drip 3s ease-in-out infinite;
+        transform-origin: center top;
+      }
+      
+      /* Apply pulse to larger blood drops */
+      .pulse-anim {
+        animation: pulse 2.5s ease-in-out infinite;
+        transform-origin: center center;
+      }
+      
+      /* Apply splatter to elliptical splatters */
+      .splatter-anim {
+        animation: splatter 4s ease-in-out infinite;
+        transform-origin: center center;
+      }
+      
+      /* Apply fade to smaller droplets */
+      .fade-anim {
+        animation: fade 2s ease-in-out infinite;
+      }
+      
+      /* Stagger animations with delays */
+      .delay-1 { animation-delay: 0.2s; }
+      .delay-2 { animation-delay: 0.4s; }
+      .delay-3 { animation-delay: 0.6s; }
+      .delay-4 { animation-delay: 0.8s; }
+      .delay-5 { animation-delay: 1s; }
+      .delay-6 { animation-delay: 1.2s; }
+      .delay-7 { animation-delay: 1.4s; }
+      .delay-8 { animation-delay: 1.6s; }
+
+      
+      /* Animation: Gentle Pulse - very subtle throb for contained blood */
+      @keyframes gentlePulse {
+        0%, 100% { 
+          transform: scale(1);
+          opacity: 0.8;
+        }
+        50% { 
+          transform: scale(1.03);
+          opacity: 0.85;
+        }
+      }
+      
+      /* Apply gentle pulse to blood pools inside letters */
+      .gentle-pulse {
+        animation: gentlePulse 4s ease-in-out infinite;
+        transform-origin: center center;
+      }
+
+
+      
+      /* Animation: Paper Flutter - torn paper pieces flutter and rotate */
+      @keyframes paperFlutter {
+        0%, 100% { 
+          transform: rotate(0deg) translateY(0) translateX(0);
+        }
+        25% { 
+          transform: rotate(2deg) translateY(-3px) translateX(2px);
+        }
+        50% { 
+          transform: rotate(-1deg) translateY(-5px) translateX(-1px);
+        }
+        75% { 
+          transform: rotate(1.5deg) translateY(-2px) translateX(1px);
+        }
+      }
+      
+      /* Animation: Paper Sway - gentle swaying motion */
+      @keyframes paperSway {
+        0%, 100% { 
+          transform: rotate(-1deg) translateX(0);
+        }
+        50% { 
+          transform: rotate(1deg) translateX(2px);
+        }
+      }
+      
+      /* Animation: Paper Shake - subtle shake/tremble */
+      @keyframes paperShake {
+        0%, 100% { 
+          transform: rotate(0deg) scale(1);
+        }
+        10% { 
+          transform: rotate(0.5deg) scale(1.01);
+        }
+        20% { 
+          transform: rotate(-0.5deg) scale(0.99);
+        }
+        30% { 
+          transform: rotate(0.3deg) scale(1.01);
+        }
+        40% { 
+          transform: rotate(-0.3deg) scale(0.99);
+        }
+        50% { 
+          transform: rotate(0.2deg) scale(1);
+        }
+      }
+      
+      /* Apply paper flutter animation */
+      .paper-flutter {
+        animation: paperFlutter 3.5s ease-in-out infinite;
+        transform-origin: center center;
+      }
+      
+      /* Apply paper sway animation */
+      .paper-sway {
+        animation: paperSway 4s ease-in-out infinite;
+        transform-origin: center top;
+      }
+      
+      /* Apply paper shake animation */
+      .paper-shake {
+        animation: paperShake 5s ease-in-out infinite;
+        transform-origin: center center;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="923.37" cy="1918.47" fx="923.37" fy="1918.47" r=".5" gradientTransform="translate(-21041 46813.36) scale(24 -24)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient1" cx="929.11" cy="1912.32" fx="929.11" fy="1912.32" r=".5" gradientTransform="translate(-24895 54394.92) scale(28 -28)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient2" cx="919.73" cy="1922.39" fx="919.73" fy="1922.39" r=".5" gradientTransform="translate(-19114 43222.58) scale(22 -22)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient3" cx="931.4" cy="1909.86" fx="931.4" fy="1909.86" r=".5" gradientTransform="translate(-26822 58305.69) scale(30 -30)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient4" cx="926.46" cy="1915.16" fx="926.46" fy="1915.16" r=".5" gradientTransform="translate(-22968 50884.14) scale(26 -26)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient5" cx="933.41" cy="1907.7" fx="933.41" fy="1907.7" r=".5" gradientTransform="translate(-28749 62216.47) scale(32 -32)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient6" cx="929.11" cy="1912.32" fx="929.11" fy="1912.32" r=".5" gradientTransform="translate(-24895 54794.92) scale(28 -28)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient7" cx="931.4" cy="1909.86" fx="931.4" fy="1909.86" r=".5" gradientTransform="translate(-26822 58625.69) scale(30 -30)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient8" cx="923.37" cy="1918.47" fx="923.37" fy="1918.47" r=".5" gradientTransform="translate(-21041 47453.36) scale(24 -24)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient9" cx="935.18" cy="1905.8" fx="935.18" fy="1905.8" r=".5" gradientTransform="translate(-30676 66287.25) scale(34 -34)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient10" cx="929.11" cy="1912.32" fx="929.11" fy="1912.32" r=".5" gradientTransform="translate(-24895 55114.92) scale(28 -28)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient11" cx="933.41" cy="1907.7" fx="933.41" fy="1907.7" r=".5" gradientTransform="translate(-28749 62696.47) scale(32 -32)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient12" cx="926.46" cy="1915.16" fx="926.46" fy="1915.16" r=".5" gradientTransform="translate(-22968 51524.14) scale(26 -26)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient13" cx="923.91" cy="1940.41" fx="923.91" fy="1940.41" r=".5" gradientTransform="translate(-32863 36901.02) scale(36 -18)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient14" cx="925.32" cy="1948.6" fx="925.32" fy="1948.6" r=".5" gradientTransform="translate(-28849 33150.24) scale(32 -16)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient15" cx="936.94" cy="1928.37" fx="936.94" fy="1928.37" r=".5" gradientTransform="translate(-40281 44402.58) scale(44 -22)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient16" cx="937.8" cy="1933.85" fx="937.8" fy="1933.85" r=".5" gradientTransform="translate(-36247 40651.8) scale(40 -20)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient17" cx="940.34" cy="1939.93" fx="940.34" fy="1939.93" r=".5" gradientTransform="translate(-32263 36901.02) scale(36 -18)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient18" cx="949.5" cy="1928.42" fx="949.5" fy="1928.42" r=".5" gradientTransform="translate(-39856 44402.58) scale(44 -22)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient19" cx="945.93" cy="1931.4" fx="945.93" fy="1931.4" r=".5" gradientTransform="translate(-35897 40651.8) scale(40 -20)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b71c1c"/>
+      <stop offset=".5" stop-color="#8b0000"/>
+      <stop offset="1" stop-color="#4a0000" stop-opacity=".8"/>
+    </radialGradient>
+  </defs>
+  <path d="M2443.1,776.1l-178.1-102.9c-252.8-183.2-693.3-408.3-1004.5-579.9-353.4,202.8-724.6,418.3-1007.6,581.6l-175,101.2v1365.6l1182.6,682.8,1182.6-682.8V776.1Z"/>
+  <path class="st32 paper-sway" d="M250,700h850v50l20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,20-20,20,20,10H250V700Z"/>
+  <line class="st2" x1="350" y1="850" x2="950" y2="850"/>
+  <line class="st2" x1="350" y1="950" x2="1000" y2="950"/>
+  <line class="st2" x1="350" y1="1050" x2="900" y2="1050"/>
+  <line class="st2" x1="350" y1="1150" x2="980" y2="1150"/>
+  <line class="st2" x1="350" y1="1250" x2="920" y2="1250"/>
+  <line class="st2" x1="350" y1="1350" x2="970" y2="1350"/>
+  <line class="st2" x1="350" y1="1450" x2="890" y2="1450"/>
+  <line class="st2" x1="350" y1="1550" x2="950" y2="1550"/>
+  <line class="st2" x1="350" y1="1650" x2="1010" y2="1650"/>
+  <text class="st16" transform="translate(434.96 1130)"><tspan x="0" y="0">.qmd</tspan></text>
+  <path class="drip-anim paper-sway st34" d="M1110,1600c-1.33,6.67-.67,13.33,2,20-1.33,10-2.67,20-4,30,1.33,10,.33,20-3,30-2,10-3.67,20-5,30s-3,20-5,30l-3,20"/>
+
+  <ellipse class="drip-anim paper-sway st35" cx="1120" cy="775" rx="6" ry="12"/>
+  <ellipse class="drip-anim paper-sway delay-1 st33" cx="1118" cy="792" rx="5" ry="10"/>
+  <circle class="drip-anim paper-sway delay-2 st0" cx="1116" cy="808" r="5"/>
+  <ellipse class="drip-anim paper-sway delay-3 st36" cx="1114" cy="823" rx="4" ry="8"/>
+  <circle class="drip-anim paper-sway delay-4 st34" cx="1112" cy="838" r="6"/>
+  <ellipse class="drip-anim paper-sway delay-5 st33" cx="1120" cy="855" rx="7" ry="14"/>
+  <circle class="drip-anim paper-sway delay-6 st0" cx="1118" cy="875" r="6"/>
+  <ellipse class="drip-anim paper-sway delay-7 st34" cx="1116" cy="892" rx="5" ry="10"/>
+  <circle class="drip-anim paper-sway st37" cx="1114" cy="908" r="7"/>
+  <ellipse class="drip-anim paper-sway delay-1 st36" cx="1112" cy="925" rx="5" ry="9"/>
+  <ellipse class="drip-anim paper-sway delay-2 st35" cx="1120" cy="935" rx="6" ry="13"/>
+  <circle class="drip-anim paper-sway delay-3 st36" cx="1119" cy="954" r="5"/>
+  <ellipse class="drip-anim paper-sway delay-4 st0" cx="1117" cy="970" rx="5" ry="10"/>
+  <circle class="drip-anim paper-sway delay-5 st34" cx="1115" cy="986" r="6"/>
+  <ellipse class="drip-anim paper-sway delay-6 st37" cx="1113" cy="1002" rx="4" ry="8"/>
+  <ellipse class="drip-anim paper-sway delay-7 st0" cx="1120" cy="1015" rx="7" ry="15"/>
+  <ellipse class="drip-anim paper-sway st33" cx="1118" cy="1036" rx="6" ry="12"/>
+  <circle class="drip-anim paper-sway delay-1 st34" cx="1116" cy="1055" r="6"/>
+  <ellipse class="drip-anim paper-sway delay-2 st37" cx="1114" cy="1072" rx="5" ry="10"/>
+  <circle class="drip-anim paper-sway delay-3 st36" cx="1112" cy="1089" r="7"/>
+  <ellipse class="drip-anim paper-sway delay-4 st35" cx="1120" cy="1095" rx="6" ry="14"/>
+  <circle class="drip-anim paper-sway delay-5 st0" cx="1119" cy="1115" r="6"/>
+  <ellipse class="drip-anim paper-sway delay-6 st36" cx="1117" cy="1133" rx="5" ry="10"/>
+  <circle class="drip-anim paper-sway delay-7 st34" cx="1115" cy="1150" r="7"/>
+  <ellipse class="drip-anim paper-sway st37" cx="1113" cy="1167" rx="5" ry="9"/>
+  <ellipse class="drip-anim paper-sway delay-1 st33" cx="1120" cy="1175" rx="7" ry="16"/>
+  <ellipse class="drip-anim paper-sway delay-2 st0" cx="1118" cy="1197" rx="6" ry="13"/>
+  <circle class="drip-anim paper-sway delay-3 st34" cx="1116" cy="1217" r="7"/>
+  <ellipse class="drip-anim paper-sway delay-4 st37" cx="1114" cy="1235" rx="6" ry="11"/>
+  <circle class="drip-anim paper-sway delay-5 st36" cx="1112" cy="1253" r="6"/>
+  <ellipse class="drip-anim paper-sway delay-6 st35" cx="1120" cy="1255" rx="6" ry="14"/>
+  <circle class="drip-anim paper-sway delay-7 st33" cx="1119" cy="1275" r="6"/>
+  <ellipse class="drip-anim paper-sway st0" cx="1117" cy="1293" rx="5" ry="11"/>
+  <circle class="drip-anim paper-sway delay-1 st34" cx="1115" cy="1310" r="7"/>
+  <ellipse class="drip-anim paper-sway delay-2 st37" cx="1113" cy="1327" rx="5" ry="9"/>
+  <ellipse class="drip-anim paper-sway delay-3 st36" cx="1120" cy="1335" rx="7" ry="15"/>
+  <circle class="drip-anim paper-sway delay-4 st34" cx="1118" cy="1356" r="6"/>
+  <ellipse class="drip-anim paper-sway delay-5 st37" cx="1116" cy="1373" rx="6" ry="11"/>
+  <circle class="drip-anim paper-sway delay-6 st0" cx="1114" cy="1391" r="7"/>
+  <ellipse class="drip-anim paper-sway delay-7 st33" cx="1112" cy="1408" rx="5" ry="9"/>
+  <ellipse class="drip-anim paper-sway st35" cx="1120" cy="1415" rx="6" ry="13"/>
+  <ellipse class="drip-anim paper-sway delay-1 st33" cx="1119" cy="1434" rx="5" ry="11"/>
+  <circle class="drip-anim paper-sway delay-2 st0" cx="1117" cy="1452" r="6"/>
+  <ellipse class="drip-anim paper-sway delay-3 st36" cx="1115" cy="1469" rx="5" ry="9"/>
+  <circle class="drip-anim paper-sway delay-4 st34" cx="1113" cy="1486" r="7"/>
+  <ellipse class="drip-anim paper-sway delay-5 st0" cx="1120" cy="1495" rx="7" ry="16"/>
+  <ellipse class="drip-anim paper-sway delay-6 st36" cx="1118" cy="1517" rx="6" ry="13"/>
+  <circle class="drip-anim paper-sway delay-7 st34" cx="1116" cy="1537" r="7"/>
+  <ellipse class="drip-anim paper-sway st37" cx="1114" cy="1555" rx="6" ry="11"/>
+  <circle class="drip-anim paper-sway delay-1 st0" cx="1112" cy="1573" r="6"/>
+  <ellipse class="drip-anim paper-sway delay-2 st35" cx="1120" cy="1575" rx="6" ry="14"/>
+  <circle class="drip-anim paper-sway delay-3 st33" cx="1119" cy="1595" r="6"/>
+  <ellipse class="drip-anim paper-sway delay-4 st0" cx="1117" cy="1612" rx="5" ry="10"/>
+  <circle class="drip-anim paper-sway delay-5 st34" cx="1115" cy="1629" r="7"/>
+  <ellipse class="drip-anim paper-sway delay-6 st35" cx="1110" cy="1610" rx="8" ry="18"/>
+  <ellipse class="drip-anim paper-sway delay-7 st33" cx="1110" cy="1630" rx="7" ry="16"/>
+  <ellipse class="drip-anim paper-sway st0" cx="1110" cy="1650" rx="7" ry="15"/>
+  <ellipse class="drip-anim paper-sway delay-1 st36" cx="1108" cy="1670" rx="6" ry="13"/>
+  <circle class="drip-anim paper-sway delay-2 st34" cx="1106" cy="1690" r="8"/>
+  <ellipse class="drip-anim paper-sway delay-3 st0" cx="1104" cy="1708" rx="7" ry="12"/>
+  <circle class="drip-anim paper-sway delay-4 st37" cx="1102" cy="1726" r="9"/>
+  <circle class="drip-anim paper-sway delay-5 st34" cx="1100" cy="1746" r="8"/>
+  <ellipse class="drip-anim paper-sway delay-6 st0" cx="1098" cy="1764" rx="7" ry="11"/>
+  <circle class="drip-anim paper-sway delay-7 st36" cx="1095" cy="1782" r="7"/>
+  <circle class="drip-anim paper-sway st34" cx="1093" cy="1800" r="6"/>
+  <ellipse class="drip-anim paper-sway delay-1 st35" cx="1120" cy="1655" rx="7" ry="14"/>
+  <ellipse class="drip-anim paper-sway delay-2 st33" cx="1122" cy="1675" rx="6" ry="12"/>
+  <circle class="drip-anim paper-sway delay-3 st0" cx="1124" cy="1693" r="7"/>
+  <ellipse class="drip-anim paper-sway delay-4 st36" cx="1126" cy="1710" rx="6" ry="10"/>
+  <circle class="drip-anim paper-sway delay-5 st34" cx="1128" cy="1727" r="6"/>
+  <ellipse class="drip-anim paper-sway delay-6 st37" cx="1130" cy="1743" rx="5" ry="9"/>
+  <circle class="drip-anim paper-sway delay-7 st0" cx="1132" cy="1760" r="6"/>
+  <ellipse class="drip-anim paper-sway st36" cx="1134" cy="1777" rx="5" ry="8"/>
+  <ellipse class="fade-anim paper-sway st33" cx="1095" cy="1615" rx="6" ry="11"/>
+  <circle class="fade-anim paper-sway delay-1 st0" cx="1093" cy="1632" r="5"/>
+  <ellipse class="fade-anim paper-sway delay-2 st34" cx="1091" cy="1648" rx="5" ry="9"/>
+  <circle class="fade-anim paper-sway delay-3 st37" cx="1089" cy="1664" r="5"/>
+  <ellipse class="fade-anim paper-sway delay-4 st36" cx="1087" cy="1680" rx="4" ry="7"/>
+  <circle class="fade-anim paper-sway delay-5 st34" cx="1085" cy="1696" r="5"/>
+  <ellipse class="drip-anim delay-2 st35" cx="1120" cy="1735" rx="6" ry="13"/>
+  <circle class="drip-anim delay-3 st33" cx="1119" cy="1754" r="6"/>
+  <ellipse class="drip-anim delay-4 st0" cx="1117" cy="1771" rx="5" ry="10"/>
+  <circle class="drip-anim delay-5 st34" cx="1115" cy="1788" r="6"/>
+  <ellipse class="drip-anim delay-6 st36" cx="1120" cy="1795" rx="6" ry="12"/>
+  <circle class="drip-anim delay-7 st34" cx="1118" cy="1813" r="6"/>
+  <ellipse class="drip-anim st37" cx="1116" cy="1830" rx="5" ry="9"/>
+  <ellipse class="fade-anim st35" cx="1150" cy="1000" rx="9" ry="3" transform="translate(-242.32 1619.64) rotate(-65)"/>
+  <ellipse class="fade-anim delay-1 st33" cx="1165" cy="1020" rx="7" ry="2" transform="translate(-282.54 1569.77) rotate(-62)"/>
+  <ellipse class="fade-anim delay-2 st0" cx="1175" cy="1035" rx="6" ry="2" transform="translate(-325.39 1482.99) rotate(-58)"/>
+  <ellipse class="fade-anim delay-3 st36" cx="1185" cy="1050" rx="5" ry="2" transform="translate(-354.8 1418.44) rotate(-55)"/>
+  <ellipse class="fade-anim delay-4 st35" cx="1160" cy="1200" rx="8" ry="3" transform="translate(-459.23 1604.59) rotate(-60)"/>
+  <ellipse class="fade-anim delay-5 st33" cx="1175" cy="1220" rx="7" ry="2" transform="translate(-488.13 1540.98) rotate(-57)"/>
+  <ellipse class="fade-anim delay-6 st0" cx="1190" cy="1235" rx="5" ry="2" transform="translate(-515.83 1412.39) rotate(-52)"/>
+  <ellipse class="fade-anim delay-7 st35" cx="1155" cy="1400" rx="9" ry="3" transform="translate(-623.37 1762.54) rotate(-62)"/>
+  <ellipse class="fade-anim st33" cx="1170" cy="1420" rx="7" ry="2" transform="translate(-654.23 1659.73) rotate(-58)"/>
+  <ellipse class="fade-anim delay-1 st36" cx="1185" cy="1438" rx="6" ry="2" transform="translate(-674.89 1551.45) rotate(-54)"/>
+  <ellipse class="fade-anim delay-2 st34" cx="1198" cy="1455" rx="5" ry="2" transform="translate(-686.65 1437.47) rotate(-50)"/>
+  <ellipse class="fade-anim delay-3 st35" cx="1080" cy="800" rx="5" ry="10" transform="translate(-263.55 764.14) rotate(-35)"/>
+  <ellipse class="fade-anim delay-4 st33" cx="1095" cy="820" rx="4" ry="8" transform="translate(-267.43 943.32) rotate(-42)"/>
+  <ellipse class="fade-anim delay-5 st0" cx="1070" cy="840" rx="4" ry="7" transform="translate(-269.11 600.66) rotate(-28)"/>
+  <ellipse class="fade-anim delay-6 st36" cx="1060" cy="820" rx="3" ry="6" transform="translate(-249.51 1104.92) rotate(-50)"/>
+  <ellipse class="fade-anim delay-7 st34" cx="1050" cy="835" rx="3" ry="7" transform="translate(-282.9 987.03) rotate(-45)"/>
+  <circle class="fade-anim st33" cx="1040" cy="850" r="3"/>
+  <ellipse class="fade-anim delay-1 st0" cx="1085" cy="860" rx="3" ry="5" transform="translate(-299.46 850.3) rotate(-38)"/>
+  <circle class="fade-anim delay-2 st36" cx="1075" cy="875" r="2"/>
+  <ellipse class="fade-anim delay-3 st36" cx="1085" cy="900" rx="3" ry="6" transform="translate(-324.09 858.78) rotate(-38)"/>
+  <ellipse class="fade-anim delay-4 st34" cx="1060" cy="920" rx="3" ry="8" transform="translate(-326.12 1140.64) rotate(-50)"/>
+  <ellipse class="fade-anim delay-5 st0" cx="1075" cy="940" rx="3" ry="5" transform="translate(-349.82 1035.46) rotate(-45)"/>
+  <circle class="fade-anim delay-6 st35" cx="1055" cy="915" r="3"/>
+  <ellipse class="fade-anim delay-7 st33" cx="1045" cy="935" rx="2" ry="5" transform="translate(-320.29 1254.72) rotate(-55)"/>
+  <circle class="fade-anim st34" cx="1090" cy="925" r="2"/>
+  <ellipse class="fade-anim delay-1 st33" cx="1080" cy="980" rx="4" ry="7" transform="translate(-355.21 721.23) rotate(-32)"/>
+  <ellipse class="fade-anim delay-2 st0" cx="1070" cy="1000" rx="3" ry="6" transform="translate(-392.46 921.74) rotate(-40)"/>
+  <ellipse class="fade-anim delay-3 st36" cx="1090" cy="1020" rx="3" ry="6" transform="translate(-387.92 809.66) rotate(-35)"/>
+  <circle class="fade-anim delay-4 st34" cx="1060" cy="995" r="3"/>
+  <ellipse class="fade-anim delay-5 st35" cx="1050" cy="1010" rx="2" ry="5" transform="translate(-403.16 1114.48) rotate(-48)"/>
+  <circle class="fade-anim delay-6 st0" cx="1095" cy="1005" r="2"/>
+  <ellipse class="fade-anim delay-7 st35" cx="1080" cy="1080" rx="5" ry="9" transform="translate(-435.97 893.86) rotate(-38)"/>
+  <ellipse class="fade-anim st33" cx="1070" cy="1100" rx="4" ry="7" transform="translate(-464.42 1078.79) rotate(-45)"/>
+  <ellipse class="fade-anim delay-1 st34" cx="1085" cy="1120" rx="3" ry="6" transform="translate(-414.64 692.55) rotate(-30)"/>
+  <circle class="fade-anim delay-2 st36" cx="1060" cy="1095" r="3"/>
+  <ellipse class="fade-anim delay-3 st0" cx="1050" cy="1110" rx="3" ry="6" transform="translate(-471.14 1254.03) rotate(-52)"/>
+  <circle class="fade-anim delay-4 st37" cx="1040" cy="1125" r="2"/>
+  <ellipse class="fade-anim delay-5 st33" cx="1095" cy="1105" rx="2" ry="4" transform="translate(-435.77 827.9) rotate(-35)"/>
+  <ellipse class="fade-anim delay-6 st0" cx="1075" cy="1160" rx="4" ry="8" transform="translate(-500.07 1017.27) rotate(-42)"/>
+  <ellipse class="fade-anim delay-7 st36" cx="1090" cy="1180" rx="3" ry="6" transform="translate(-479.7 838.6) rotate(-35)"/>
+  <ellipse class="fade-anim st33" cx="1065" cy="1200" rx="3" ry="5" transform="translate(-538.82 1244.49) rotate(-50)"/>
+  <circle class="fade-anim delay-1 st34" cx="1055" cy="1175" r="3"/>
+  <ellipse class="fade-anim delay-2 st35" cx="1045" cy="1190" rx="2" ry="5" transform="translate(-535.38 1087.47) rotate(-45)"/>
+  <circle class="fade-anim delay-3 st0" cx="1035" cy="1205" r="2"/>
+  <ellipse class="fade-anim delay-4 st34" cx="1080" cy="1240" rx="4" ry="7" transform="translate(-534.47 927.78) rotate(-38)"/>
+  <ellipse class="fade-anim delay-5 st0" cx="1070" cy="1260" rx="3" ry="6" transform="translate(-577.56 1125.65) rotate(-45)"/>
+  <ellipse class="fade-anim delay-6 st36" cx="1085" cy="1280" rx="3" ry="5" transform="translate(-513.43 769.46) rotate(-32)"/>
+  <circle class="fade-anim delay-7 st33" cx="1060" cy="1255" r="3"/>
+  <ellipse class="fade-anim st37" cx="1050" cy="1270" rx="2" ry="5" transform="translate(-596.38 1200.51) rotate(-48)"/>
+  <circle class="fade-anim delay-1 st35" cx="1095" cy="1265" r="2"/>
+  <ellipse class="fade-anim delay-2 st35" cx="1075" cy="1320" rx="4" ry="8" transform="translate(-596.98 999.82) rotate(-40)"/>
+  <ellipse class="fade-anim delay-3 st33" cx="1090" cy="1340" rx="3" ry="6" transform="translate(-571.47 867.53) rotate(-35)"/>
+  <ellipse class="fade-anim delay-4 st0" cx="1065" cy="1360" rx="3" ry="6" transform="translate(-658.3 1241.43) rotate(-48)"/>
+  <circle class="fade-anim delay-5 st36" cx="1055" cy="1335" r="3"/>
+  <ellipse class="fade-anim delay-6 st34" cx="1045" cy="1350" rx="2" ry="5" transform="translate(-660.24 1431.69) rotate(-55)"/>
+  <circle class="fade-anim delay-7 st37" cx="1100" cy="1345" r="2"/>
+  <ellipse class="fade-anim st36" cx="1080" cy="1400" rx="4" ry="7" transform="translate(-659.38 1082.26) rotate(-42)"/>
+  <ellipse class="fade-anim delay-1 st34" cx="1070" cy="1420" rx="3" ry="6" transform="translate(-647.41 959.78) rotate(-38)"/>
+  <ellipse class="fade-anim delay-2 st0" cx="1085" cy="1440" rx="3" ry="5" transform="translate(-629.73 882.75) rotate(-35)"/>
+  <circle class="fade-anim delay-3 st33" cx="1060" cy="1415" r="3"/>
+  <ellipse class="fade-anim delay-4 st35" cx="1050" cy="1430" rx="2" ry="5" transform="translate(-720.37 1315.16) rotate(-50)"/>
+  <circle class="fade-anim delay-5 st36" cx="1040" cy="1445" r="2"/>
+  <ellipse class="fade-anim delay-6 st33" cx="1075" cy="1480" rx="4" ry="8" transform="translate(-699.82 1037.25) rotate(-40)"/>
+  <ellipse class="fade-anim delay-7 st0" cx="1090" cy="1500" rx="3" ry="6" transform="translate(-629.25 805.54) rotate(-32)"/>
+  <ellipse class="fade-anim st36" cx="1065" cy="1520" rx="3" ry="6" transform="translate(-762.87 1198.27) rotate(-45)"/>
+  <circle class="fade-anim delay-1 st34" cx="1055" cy="1495" r="3"/>
+  <ellipse class="fade-anim delay-2 st37" cx="1045" cy="1510" rx="2" ry="5" transform="translate(-788.26 1403.82) rotate(-52)"/>
+  <circle class="fade-anim delay-3 st35" cx="1095" cy="1515" r="2"/>
+  <ellipse class="fade-anim delay-4 st35" cx="1080" cy="1575" rx="5" ry="10" transform="translate(-708.07 904.3) rotate(-35)"/>
+  <ellipse class="fade-anim delay-5 st33" cx="1095" cy="1590" rx="4" ry="8" transform="translate(-782.66 1141.1) rotate(-42)"/>
+  <ellipse class="fade-anim delay-6 st0" cx="1070" cy="1605" rx="4" ry="7" transform="translate(-628.26 690.2) rotate(-28)"/>
+  <ellipse class="fade-anim delay-7 st36" cx="1085" cy="1620" rx="3" ry="6" transform="translate(-767.36 1011.42) rotate(-38)"/>
+  <ellipse class="fade-anim st34" cx="1060" cy="1635" rx="3" ry="8" transform="translate(-873.84 1396.05) rotate(-50)"/>
+  <ellipse class="fade-anim delay-1 st0" cx="1075" cy="1650" rx="3" ry="5" transform="translate(-851.87 1243.41) rotate(-45)"/>
+  <ellipse class="fade-anim delay-2 st37" cx="1055" cy="1665" rx="2" ry="6" transform="translate(-801.43 1002.48) rotate(-38)"/>
+  <ellipse class="fade-anim delay-3 st36" cx="1065" cy="1680" rx="3" ry="5" transform="translate(-728.44 819.64) rotate(-32)"/>
+  <ellipse class="fade-anim delay-4 st33" cx="1050" cy="1595" rx="3" ry="6" transform="translate(-858.8 1540.26) rotate(-55)"/>
+  <ellipse class="fade-anim delay-5 st0" cx="1045" cy="1615" rx="2" ry="5" transform="translate(-854.42 1310.94) rotate(-48)"/>
+  <ellipse class="fade-anim delay-6 st34" cx="1040" cy="1630" rx="3" ry="7" transform="translate(-804.43 1049.85) rotate(-40)"/>
+  <circle class="fade-anim delay-7 st35" cx="1035" cy="1645" r="3"/>
+  <ellipse class="fade-anim st36" cx="1030" cy="1660" rx="2" ry="4" transform="translate(-903.71 1382) rotate(-50)"/>
+  <ellipse class="fade-anim delay-1 st0" cx="1075" cy="1700" rx="3" ry="6" transform="translate(-861.4 1155.97) rotate(-42)"/>
+  <ellipse class="fade-anim delay-2 st36" cx="1090" cy="1720" rx="3" ry="5" transform="translate(-789.43 936.26) rotate(-35)"/>
+  <ellipse class="fade-anim delay-3 st33" cx="1065" cy="1740" rx="2" ry="5" transform="translate(-869.29 1091.65) rotate(-40)"/>
+  <circle class="fade-anim delay-4 st34" cx="1055" cy="1715" r="3"/>
+  <ellipse class="fade-anim delay-5 st37" cx="1045" cy="1730" rx="2" ry="4" transform="translate(-939.88 1348.99) rotate(-48)"/>
+  <ellipse class="fade-anim delay-6 st34" cx="1080" cy="1760" rx="3" ry="6" transform="translate(-854.62 1038.02) rotate(-38)"/>
+  <ellipse class="fade-anim delay-7 st0" cx="1070" cy="1780" rx="2" ry="4" transform="translate(-945.25 1277.95) rotate(-45)"/>
+  <circle class="fade-anim st36" cx="1060" cy="1765" r="2"/>
+  <ellipse class="fade-anim delay-1 st35" cx="1140" cy="800" rx="8" ry="4" transform="translate(-169.2 1274.97) rotate(-55)"/>
+  <ellipse class="fade-anim delay-2 st33" cx="1150" cy="820" rx="6" ry="3" transform="translate(-217.36 1173.87) rotate(-50)"/>
+  <circle class="fade-anim delay-3 st36" cx="1160" cy="835" r="3"/>
+  <ellipse class="fade-anim delay-4 st0" cx="1145" cy="900" rx="7" ry="3" transform="translate(-225 1394.09) rotate(-58)"/>
+  <ellipse class="fade-anim delay-5 st34" cx="1155" cy="920" rx="6" ry="3" transform="translate(-281.06 1263.74) rotate(-52)"/>
+  <circle class="fade-anim delay-6 st33" cx="1165" cy="935" r="2"/>
+  <ellipse class="fade-anim delay-7 st36" cx="1140" cy="1000" rx="7" ry="4" transform="translate(-333.03 1360.26) rotate(-55)"/>
+  <ellipse class="fade-anim st0" cx="1150" cy="1020" rx="6" ry="3" transform="translate(-370.57 1245.31) rotate(-50)"/>
+  <circle class="fade-anim delay-1 st37" cx="1160" cy="1035" r="3"/>
+  <ellipse class="fade-anim delay-2 st35" cx="1145" cy="1100" rx="8" ry="4" transform="translate(-401.15 1461.17) rotate(-57)"/>
+  <ellipse class="fade-anim delay-3 st33" cx="1155" cy="1120" rx="6" ry="3" transform="translate(-438.66 1340.61) rotate(-52)"/>
+  <circle class="fade-anim delay-4 st36" cx="1165" cy="1135" r="2"/>
+  <ellipse class="fade-anim delay-5 st34" cx="1140" cy="1200" rx="7" ry="3" transform="translate(-496.86 1445.54) rotate(-55)"/>
+  <ellipse class="fade-anim delay-6 st0" cx="1150" cy="1220" rx="6" ry="3" transform="translate(-523.78 1316.75) rotate(-50)"/>
+  <circle class="fade-anim delay-7 st33" cx="1160" cy="1235" r="3"/>
+  <ellipse class="fade-anim st36" cx="1145" cy="1300" rx="7" ry="4" transform="translate(-564.22 1582.12) rotate(-58)"/>
+  <ellipse class="fade-anim delay-1 st37" cx="1155" cy="1320" rx="6" ry="3" transform="translate(-596.26 1417.48) rotate(-52)"/>
+  <circle class="fade-anim delay-2 st35" cx="1165" cy="1335" r="2"/>
+  <ellipse class="fade-anim delay-3 st0" cx="1140" cy="1400" rx="8" ry="4" transform="translate(-660.69 1530.83) rotate(-55)"/>
+  <ellipse class="fade-anim delay-4 st33" cx="1150" cy="1420" rx="6" ry="3" transform="translate(-676.99 1388.19) rotate(-50)"/>
+  <circle class="fade-anim delay-5 st36" cx="1160" cy="1435" r="3"/>
+  <ellipse class="fade-anim delay-6 st34" cx="1145" cy="1500" rx="7" ry="3" transform="translate(-736.62 1643.32) rotate(-57)"/>
+  <ellipse class="fade-anim delay-7 st0" cx="1155" cy="1520" rx="6" ry="3" transform="translate(-753.87 1494.35) rotate(-52)"/>
+  <circle class="fade-anim st37" cx="1165" cy="1535" r="2"/>
+  <ellipse class="fade-anim delay-1 st35" cx="1140" cy="1580" rx="9" ry="5" transform="translate(-808.14 1607.58) rotate(-55)"/>
+  <ellipse class="fade-anim delay-2 st33" cx="1150" cy="1595" rx="7" ry="4" transform="translate(-804.82 1382.35) rotate(-48)"/>
+  <ellipse class="fade-anim delay-3 st0" cx="1145" cy="1610" rx="6" ry="3" transform="translate(-814.09 1865.13) rotate(-62)"/>
+  <ellipse class="fade-anim delay-4 st36" cx="1155" cy="1625" rx="6" ry="3" transform="translate(-836.61 1534.7) rotate(-52)"/>
+  <ellipse class="fade-anim delay-5 st34" cx="1148" cy="1640" rx="5" ry="3" transform="translate(-823.41 1292.1) rotate(-45)"/>
+  <ellipse class="fade-anim delay-6 st37" cx="1160" cy="1655" rx="5" ry="2" transform="translate(-861.05 1655.95) rotate(-55)"/>
+  <ellipse class="fade-anim delay-7 st0" cx="1165" cy="1670" rx="4" ry="2" transform="translate(-800.9 1139.55) rotate(-40)"/>
+  <ellipse class="fade-anim st33" cx="1170" cy="1590" rx="5" ry="3" transform="translate(-800.07 1464.24) rotate(-50)"/>
+  <ellipse class="fade-anim delay-1 st36" cx="1175" cy="1610" rx="4" ry="2" transform="translate(-813.01 1753.29) rotate(-58)"/>
+  <circle class="fade-anim delay-2 st34" cx="1180" cy="1625" r="2"/>
+  <ellipse class="fade-anim delay-3 st0" cx="1185" cy="1640" rx="4" ry="2" transform="translate(-812.58 1318.27) rotate(-45)"/>
+  <circle class="fade-anim delay-4 st35" cx="900" cy="900" r="6"/>
+  <ellipse class="fade-anim delay-5 st33" cx="920" cy="920" rx="8" ry="5" transform="translate(-381.08 920) rotate(-45)"/>
+  <circle class="fade-anim delay-6 st0" cx="880" cy="940" r="5"/>
+  <ellipse class="fade-anim delay-7 st36" cx="940" cy="930" rx="4" ry="7" transform="translate(-339.06 594.6) rotate(-30)"/>
+  <ellipse class="fade-anim st34" cx="850" cy="1000" rx="4" ry="7" transform="translate(-443.93 780.33) rotate(-40)"/>
+  <circle class="fade-anim delay-1 st33" cx="870" cy="1020" r="4"/>
+  <ellipse class="fade-anim delay-2 st0" cx="890" cy="1040" rx="6" ry="4" transform="translate(-472.4 1172.53) rotate(-55)"/>
+  <circle class="fade-anim delay-3 st36" cx="910" cy="1015" r="3"/>
+  <ellipse class="fade-anim delay-4 st37" cx="930" cy="1035" rx="3" ry="5" transform="translate(-350.28 490.01) rotate(-25)"/>
+  <circle class="fade-anim delay-5 st35" cx="800" cy="1100" r="5"/>
+  <ellipse class="fade-anim delay-6 st33" cx="820" cy="1120" rx="7" ry="4" transform="translate(-565.06 1028.23) rotate(-50)"/>
+  <circle class="fade-anim delay-7 st0" cx="840" cy="1140" r="4"/>
+  <ellipse class="fade-anim st36" cx="860" cy="1115" rx="3" ry="6" transform="translate(-484.01 694.92) rotate(-35)"/>
+  <circle class="fade-anim delay-1 st34" cx="880" cy="1135" r="4"/>
+  <ellipse class="fade-anim delay-2 st0" cx="750" cy="1200" rx="5" ry="8" transform="translate(-628.86 881.8) rotate(-45)"/>
+  <circle class="fade-anim delay-3 st33" cx="770" cy="1220" r="4"/>
+  <ellipse class="fade-anim delay-4 st36" cx="790" cy="1240" rx="6" ry="4" transform="translate(-678.87 1304.16) rotate(-60)"/>
+  <circle class="fade-anim delay-5 st37" cx="810" cy="1215" r="3"/>
+  <ellipse class="fade-anim delay-6 st35" cx="830" cy="1235" rx="3" ry="5" transform="translate(-599.66 822.45) rotate(-40)"/>
+  <circle class="fade-anim delay-7 st34" cx="700" cy="1300" r="5"/>
+  <ellipse class="fade-anim st0" cx="720" cy="1320" rx="7" ry="4" transform="translate(-722.5 895.74) rotate(-45)"/>
+  <circle class="fade-anim delay-1 st33" cx="740" cy="1340" r="4"/>
+  <ellipse class="fade-anim delay-2 st36" cx="760" cy="1315" rx="3" ry="6" transform="translate(-555.68 556.18) rotate(-30)"/>
+  <circle class="fade-anim delay-3 st37" cx="780" cy="1335" r="3"/>
+  <circle class="fade-anim delay-4 st35" cx="850" cy="1400" r="6"/>
+  <ellipse class="fade-anim delay-5 st33" cx="870" cy="1420" rx="8" ry="5" transform="translate(-777.01 1173.7) rotate(-50)"/>
+  <circle class="fade-anim delay-6 st0" cx="890" cy="1440" r="5"/>
+  <ellipse class="fade-anim delay-7 st36" cx="910" cy="1415" rx="4" ry="7" transform="translate(-647.04 777.85) rotate(-35)"/>
+  <circle class="fade-anim st34" cx="930" cy="1435" r="4"/>
+  <ellipse class="fade-anim delay-1 st37" cx="950" cy="1455" rx="6" ry="4" transform="translate(-770.17 1701.08) rotate(-65)"/>
+  <circle class="fade-anim delay-2 st0" cx="800" cy="1480" r="5"/>
+  <ellipse class="fade-anim delay-3 st35" cx="820" cy="1500" rx="5" ry="8" transform="translate(-772.34 878.02) rotate(-40)"/>
+  <circle class="fade-anim delay-4 st33" cx="840" cy="1520" r="4"/>
+  <ellipse class="fade-anim delay-5 st36" cx="860" cy="1495" rx="6" ry="4" transform="translate(-857.91 1341.97) rotate(-55)"/>
+  <circle class="fade-anim delay-6 st34" cx="880" cy="1515" r="4"/>
+  <circle class="pulse-anim st35" cx="950" cy="1545" r="5"/>
+  <ellipse class="pulse-anim delay-1 st33" cx="965" cy="1565" rx="8" ry="5" transform="translate(-823.98 1140.74) rotate(-45)"/>
+  <circle class="pulse-anim delay-2 st0" cx="940" cy="1585" r="5"/>
+  <ellipse class="pulse-anim delay-3 st36" cx="975" cy="1600" rx="4" ry="7" transform="translate(-669.37 701.86) rotate(-30)"/>
+  <circle class="pulse-anim delay-4 st34" cx="930" cy="1615" r="4"/>
+  <ellipse class="pulse-anim delay-5 st0" cx="960" cy="1630" rx="6" ry="4" transform="translate(-823.15 998.42) rotate(-40)"/>
+  <circle class="pulse-anim delay-6 st37" cx="945" cy="1645" r="5"/>
+  <ellipse class="pulse-anim delay-7 st33" cx="920" cy="1660" rx="3" ry="5" transform="translate(-615.35 544.34) rotate(-25)"/>
+  <circle class="pulse-anim st36" cx="955" cy="1675" r="4"/>
+  <ellipse class="pulse-anim delay-1 st34" cx="935" cy="1690" rx="5" ry="3" transform="translate(-985.66 1486.56) rotate(-55)"/>
+  <circle class="fade-anim st0" cx="1000" cy="1560" r="3"/>
+  <circle class="fade-anim delay-1 st33" cx="1020" cy="1580" r="2"/>
+  <circle class="fade-anim delay-2 st36" cx="990" cy="1600" r="2"/>
+  <circle class="fade-anim delay-3 st0" cx="1010" cy="1620" r="3"/>
+  <circle class="fade-anim delay-4 st33" cx="980" cy="1640" r="2"/>
+  <circle class="fade-anim delay-5 st37" cx="1005" cy="1650" r="2"/>
+  <circle class="fade-anim delay-6 st35" cx="995" cy="1670" r="2"/>
+  <ellipse class="fade-anim delay-7 st0" cx="350" cy="1100" rx="3" ry="6" transform="translate(-625.18 482.33) rotate(-40)"/>
+  <circle class="fade-anim st36" cx="370" cy="1120" r="3"/>
+  <ellipse class="fade-anim delay-1 st33" cx="390" cy="1140" rx="4" ry="2" transform="translate(-767.53 805.59) rotate(-55)"/>
+  <circle class="fade-anim delay-2 st34" cx="400" cy="1300" r="4"/>
+  <ellipse class="fade-anim delay-3 st0" cx="420" cy="1320" rx="3" ry="5" transform="translate(-810.37 683.6) rotate(-45)"/>
+  <circle class="fade-anim delay-4 st35" cx="440" cy="1340" r="3"/>
+  <ellipse class="fade-anim delay-5 st36" cx="500" cy="1500" rx="6" ry="4" transform="translate(-970.46 918.84) rotate(-50)"/>
+  <circle class="fade-anim delay-6 st0" cx="520" cy="1520" r="3"/>
+  <ellipse class="fade-anim delay-7 st34" cx="540" cy="1540" rx="3" ry="5" transform="translate(-697.65 476.32) rotate(-30)"/>
+  <circle class="fade-anim st0" cx="1420" cy="800" r="4"/>
+  <ellipse class="fade-anim delay-1 st33" cx="1440" cy="820" rx="5" ry="3" transform="translate(9.86 1657.08) rotate(-60)"/>
+  <circle class="fade-anim delay-2 st36" cx="1470" cy="810" r="3"/>
+  <ellipse class="fade-anim delay-3 st34" cx="1750" cy="790" rx="4" ry="6" transform="translate(-169.91 813.6) rotate(-25)"/>
+  <circle class="fade-anim delay-4 st0" cx="1780" cy="810" r="3"/>
+  <circle class="fade-anim delay-5 st33" cx="1810" cy="800" r="2"/>
+  <circle class="fade-anim delay-6 st36" cx="1370" cy="990" r="4"/>
+  <ellipse class="fade-anim delay-7 st0" cx="1390" cy="1010" rx="5" ry="3" transform="translate(-277.18 1425.59) rotate(-50)"/>
+  <circle class="fade-anim st37" cx="1420" cy="1000" r="3"/>
+  <ellipse class="fade-anim delay-1 st33" cx="1700" cy="980" rx="4" ry="6" transform="translate(-262.24 981.3) rotate(-30)"/>
+  <circle class="fade-anim delay-2 st0" cx="1720" cy="1000" r="3"/>
+  <circle class="fade-anim delay-3 st36" cx="1750" cy="990" r="2"/>
+  <circle class="fade-anim delay-4 st34" cx="2030" cy="990" r="4"/>
+  <ellipse class="fade-anim delay-5 st0" cx="2050" cy="1010" rx="5" ry="3" transform="translate(46.82 2109.95) rotate(-55)"/>
+  <circle class="fade-anim delay-6 st33" cx="2080" cy="1000" r="3"/>
+  <ellipse class="fade-anim delay-7 st0" cx="1470" cy="1180" rx="4" ry="6" transform="translate(-414.57 1220.97) rotate(-40)"/>
+  <circle class="fade-anim st36" cx="1490" cy="1200" r="3"/>
+  <circle class="fade-anim delay-1 st34" cx="1520" cy="1190" r="3"/>
+  <circle class="fade-anim delay-2 st35" cx="1800" cy="1190" r="4"/>
+  <ellipse class="fade-anim delay-3 st33" cx="1820" cy="1210" rx="5" ry="3" transform="translate(-137.89 2181.17) rotate(-60)"/>
+  <circle class="fade-anim delay-4 st0" cx="1850" cy="1200" r="3"/>
+  <ellipse class="fade-anim delay-5 st36" cx="1570" cy="1380" rx="4" ry="6" transform="translate(-507.6 1150.09) rotate(-35)"/>
+  <circle class="fade-anim delay-6 st0" cx="1590" cy="1400" r="4"/>
+  <circle class="fade-anim delay-7 st34" cx="1620" cy="1390" r="3"/>
+  <ellipse class="fade-anim st33" cx="1650" cy="1410" rx="5" ry="3" transform="translate(-325.21 2309.52) rotate(-65)"/>
+  <g class="paper-flutter">
+    <path class="st31" d="M1350,750h210l20,20-20,20,20,20-20,20,20,20h-230l-20-20,20-20-20-20,20-20v-20Z"/>
+    <text class="st27" transform="translate(1394.99 825)"><tspan x="0" y="0">.R</tspan></text>
+  </g>
+  <g class="paper-flutter delay-1">
+    <path class="st31" d="M1680,750h220l20,20-20,20,20,20-20,20,20,20h-240l-20-20,20-20-20-20,20-20v-20Z"/>
+    <text class="st27" transform="translate(1699.99 825)"><tspan x="0" y="0">.py</tspan></text>
+  </g>
+  <g class="paper-sway">
+    <path class="st31" d="M1300,950h210l20,20-20,20,20,20-20,20,20,20h-230l-20-20,20-20-20-20,20-20v-20Z"/>
+    <text class="st27" transform="translate(1314.99 1025)"><tspan x="0" y="0">.jl</tspan></text>
+  </g>
+  <g class="paper-sway delay-2">
+    <path class="st31" d="M1630,950h210l20,20-20,20,20,20-20,20,20,20h-230l-20-20,20-20-20-20,20-20v-20Z"/>
+    <text class="st27" transform="translate(1644.99 1025)"><tspan x="0" y="0">.js</tspan></text>
+  </g>
+  <g class="paper-sway delay-4">
+    <path class="st31" d="M1960,950h220l20,20-20,20,20,20-20,20,20,20h-240l-20-20,20-20-20-20,20-20v-20Z"/>
+    <text class="st27" transform="translate(1949.98 1025)"><tspan x="0" y="0">.lua</tspan></text>
+  </g>
+  <g class="paper-shake">
+    <path class="st31" d="M1400,1150h210l20,20-20,20,20,20-20,20,20,20h-230l-20-20,20-20-20-20,20-20v-20Z"/>
+    <text class="st27" transform="translate(1414.99 1225)"><tspan x="0" y="0">.sh</tspan></text>
+  </g>
+  <g class="paper-shake delay-3">
+    <path class="st31" d="M1730,1150h210l20,20-20,20,20,20-20,20,20,20h-230l-20-20,20-20-20-20,20-20v-20Z"/>
+    <text class="st27" transform="translate(1744.99 1225)"><tspan x="0" y="0">.ts</tspan></text>
+  </g>
+  <g class="paper-flutter delay-6">
+    <path class="st31" d="M1500,1350h230l20,20-20,20,20,20-20,20,20,20h-250l-20-20,20-20-20-20,20-20v-20Z"/>
+    <text class="st27" transform="translate(1524.99 1425)"><tspan x="0" y="0">.md</tspan></text>
+  </g>
+  <g>
+    <text class="st3" transform="translate(322.66 2259)"><tspan x="0" y="0">RIPPER</tspan></text>
+    <text class="st15" transform="translate(320.66 2257)"><tspan x="0" y="0">RIPPER</tspan></text>
+  </g>
+  <path class="drip-anim st34" d="M397.76,1983.71c-1.33,13.33-1.33,26.67,0,40l-2,20c-1.33,10,0,15,0,15"/>
+  <ellipse class="drip-anim st35" cx="397.76" cy="1993.71" rx="6" ry="14"/>
+  <ellipse class="drip-anim delay-1 st33" cx="396.76" cy="2013.71" rx="5" ry="12"/>
+  <circle class="drip-anim delay-2 st0" cx="395.76" cy="2033.71" r="6"/>
+  <ellipse class="drip-anim delay-3 st36" cx="394.76" cy="2053.71" rx="5" ry="10"/>
+  <circle class="drip-anim delay-4 st34" cx="393.76" cy="2073.71" r="7"/>
+  <ellipse class="fade-anim st33" cx="417.76" cy="1998.71" rx="5" ry="11"/>
+  <circle class="fade-anim delay-1 st0" cx="415.76" cy="2016.71" r="5"/>
+  <ellipse class="fade-anim delay-2 st36" cx="413.76" cy="2033.71" rx="4" ry="8"/>
+  <circle class="fade-anim delay-3 st34" cx="411.76" cy="2050.71" r="4"/>
+  <path class="drip-anim delay-1 st0" d="M761.39,1982.65c-1.33,13.33-1.33,26.67,0,40"/>
+  <ellipse class="drip-anim delay-1 st33" cx="761.39" cy="1990.65" rx="5" ry="12"/>
+  <circle class="drip-anim delay-2 st0" cx="760.39" cy="2009.65" r="5"/>
+  <ellipse class="drip-anim delay-3 st34" cx="759.39" cy="2027.65" rx="4" ry="9"/>
+  <circle class="drip-anim delay-4 st37" cx="758.39" cy="2045.65" r="5"/>
+  <path class="drip-anim delay-2 st37" d="M944.52,1988.36c-1.33,14.67-1.33,29.33,0,44"/>
+  <ellipse class="drip-anim delay-2 st35" cx="944.52" cy="1996.36" rx="7" ry="16"/>
+  <ellipse class="drip-anim delay-3 st33" cx="943.52" cy="2018.36" rx="6" ry="14"/>
+  <circle class="drip-anim delay-4 st0" cx="942.52" cy="2040.36" r="7"/>
+  <ellipse class="drip-anim delay-5 st36" cx="941.52" cy="2062.36" rx="6" ry="12"/>
+  <circle class="drip-anim delay-6 st34" cx="940.52" cy="2084.36" r="8"/>
+  <path class="drip-anim delay-3 st0" d="M1264.97,1984.71l-2,25c-1.33,13.33-1.33,26.67,0,40"/>
+  <ellipse class="drip-anim delay-3 st33" cx="1264.97" cy="1994.71" rx="6" ry="14"/>
+  <circle class="drip-anim delay-4 st0" cx="1263.97" cy="2016.71" r="6"/>
+  <ellipse class="drip-anim delay-5 st36" cx="1262.97" cy="2036.71" rx="5" ry="11"/>
+  <circle class="drip-anim delay-6 st34" cx="1261.97" cy="2056.71" r="6"/>
+  <ellipse class="fade-anim delay-3 st35" cx="1279.97" cy="1999.71" rx="4" ry="10"/>
+  <circle class="fade-anim delay-4 st33" cx="1277.97" cy="2016.71" r="4"/>
+  <path class="drip-anim delay-4 st34" d="M1589.19,1992.27c-1.33,13.33-1.33,26.67,0,40"/>
+  <ellipse class="drip-anim delay-4 st35" cx="1589.19" cy="2001.27" rx="6" ry="14"/>
+  <ellipse class="drip-anim delay-5 st33" cx="1588.19" cy="2022.27" rx="5" ry="12"/>
+  <circle class="drip-anim delay-6 st0" cx="1587.19" cy="2042.27" r="6"/>
+  <ellipse class="drip-anim delay-7 st36" cx="1586.19" cy="2062.27" rx="5" ry="10"/>
+  <circle class="drip-anim st37" cx="1585.19" cy="2082.27" r="6"/>
+  <ellipse class="fade-anim delay-4 st33" cx="1604.19" cy="2007.27" rx="4" ry="11"/>
+  <circle class="fade-anim delay-5 st0" cx="1602.19" cy="2025.27" r="5"/>
+  <path class="drip-anim delay-5 st37" d="M1921.88,1987.29c-1.33,16-1.33,32,0,48"/>
+  <ellipse class="drip-anim delay-5 st35" cx="1921.88" cy="1996.29" rx="7" ry="15"/>
+  <ellipse class="drip-anim delay-6 st33" cx="1920.88" cy="2019.29" rx="6" ry="13"/>
+  <circle class="drip-anim delay-7 st0" cx="1919.88" cy="2042.29" r="7"/>
+  <ellipse class="drip-anim st36" cx="1918.88" cy="2065.29" rx="6" ry="11"/>
+  <circle class="drip-anim delay-1 st34" cx="1917.88" cy="2087.29" r="7"/>
+  <path class="drip-anim delay-6 st34" d="M1940.38,2033.71c-1.33,18-1.33,36,0,54"/>
+  <ellipse class="drip-anim delay-6 st35" cx="1940.38" cy="2043.71" rx="7" ry="17"/>
+  <ellipse class="drip-anim delay-7 st33" cx="1939.38" cy="2067.71" rx="6" ry="15"/>
+  <circle class="drip-anim st0" cx="1938.38" cy="2091.71" r="7"/>
+  <ellipse class="fade-anim st33" cx="1955.38" cy="2048.71" rx="5" ry="12"/>
+  <circle class="fade-anim delay-1 st0" cx="1953.38" cy="2067.71" r="5"/>
+  <ellipse class="fade-anim delay-2 st34" cx="1951.38" cy="2085.71" rx="4" ry="9"/>
+  <circle class="drip-anim st34" cx="393.76" cy="2073.71" r="5"/>
+  <circle class="fade-anim delay-5 st34" cx="415.76" cy="2050.71" r="4"/>
+  <circle class="drip-anim delay-1 st37" cx="757.39" cy="2045.65" r="5"/>
+  <circle class="drip-anim delay-4 st34" cx="940.52" cy="2084.36" r="6"/>
+  <circle class="drip-anim delay-5 st37" cx="1260.97" cy="2056.71" r="5"/>
+  <circle class="drip-anim delay-6 st34" cx="1585.19" cy="2082.27" r="5"/>
+  <circle class="drip-anim delay-7 st34" cx="1917.88" cy="2087.29" r="6"/>
+  <circle class="drip-anim st34" cx="1936.38" cy="2091.71" r="5"/>
+  <ellipse class="fade-anim st33" cx="287.76" cy="1913.71" rx="4" ry="7" transform="translate(-1268.92 763.99) rotate(-45)"/>
+  <circle class="fade-anim delay-1 st0" cx="307.76" cy="1933.71" r="3"/>
+  <ellipse class="fade-anim delay-2 st36" cx="327.76" cy="1918.71" rx="3" ry="5" transform="translate(-915.44 420.94) rotate(-30)"/>
+  <circle class="fade-anim delay-3 st34" cx="347.76" cy="1938.71" r="3"/>
+  <ellipse class="fade-anim delay-4 st35" cx="367.76" cy="1923.71" rx="3" ry="6" transform="translate(-1150.5 686.46) rotate(-40)"/>
+  <circle class="fade-anim delay-5 st37" cx="387.76" cy="1943.71" r="2"/>
+  <ellipse class="fade-anim delay-6 st0" cx="437.76" cy="1903.71" rx="6" ry="4" transform="translate(-1372.76 1170.38) rotate(-55)"/>
+  <circle class="fade-anim delay-7 st33" cx="457.76" cy="1923.71" r="3"/>
+  <ellipse class="fade-anim st36" cx="681.39" cy="1907.65" rx="3" ry="5" transform="translate(-970.95 735.82) rotate(-35)"/>
+  <circle class="fade-anim delay-1 st34" cx="701.39" cy="1927.65" r="2"/>
+  <ellipse class="fade-anim delay-2 st35" cx="721.39" cy="1912.65" rx="6" ry="3" transform="translate(-1207.48 1235.84) rotate(-50)"/>
+  <circle class="fade-anim delay-3 st0" cx="791.39" cy="1892.65" r="3"/>
+  <ellipse class="fade-anim delay-4 st33" cx="811.39" cy="1912.65" rx="4" ry="7" transform="translate(-1114.8 1133.94) rotate(-45)"/>
+  <circle class="fade-anim delay-5 st36" cx="884.52" cy="1903.36" r="3"/>
+  <ellipse class="fade-anim delay-6 st34" cx="904.52" cy="1923.36" rx="5" ry="3" transform="translate(-1213.42 1745.02) rotate(-60)"/>
+  <circle class="fade-anim delay-7 st37" cx="924.52" cy="1908.36" r="2"/>
+  <ellipse class="fade-anim st35" cx="994.52" cy="1888.36" rx="4" ry="6" transform="translate(-903.26 911.94) rotate(-35)"/>
+  <circle class="fade-anim delay-1 st0" cx="1014.52" cy="1908.36" r="3"/>
+  <ellipse class="fade-anim delay-2 st33" cx="1034.52" cy="1893.36" rx="5" ry="3" transform="translate(-1080.85 1468.82) rotate(-50)"/>
+  <circle class="fade-anim delay-3 st36" cx="1194.97" cy="1909.71" r="3"/>
+  <ellipse class="fade-anim delay-4 st34" cx="1214.97" cy="1894.71" rx="3" ry="6" transform="translate(-933.65 1224.25) rotate(-40)"/>
+  <circle class="fade-anim delay-5 st0" cx="1284.97" cy="1874.71" r="3"/>
+  <ellipse class="fade-anim delay-6 st35" cx="1304.97" cy="1894.71" rx="7" ry="4" transform="translate(-995.59 1876.92) rotate(-55)"/>
+  <circle class="fade-anim delay-7 st33" cx="1324.97" cy="1879.71" r="3"/>
+  <ellipse class="fade-anim st36" cx="1539.19" cy="1907.27" rx="3" ry="5" transform="translate(-747.42 1025.12) rotate(-30)"/>
+  <circle class="fade-anim delay-1 st37" cx="1559.19" cy="1892.27" r="2"/>
+  <ellipse class="fade-anim delay-2 st34" cx="1629.19" cy="1872.27" rx="4" ry="6" transform="translate(-846.72 1700.39) rotate(-45)"/>
+  <circle class="fade-anim delay-3 st0" cx="1649.19" cy="1892.27" r="3"/>
+  <ellipse class="fade-anim delay-4 st33" cx="1886.88" cy="1872.29" rx="5" ry="3" transform="translate(-760.24 2114.24) rotate(-50)"/>
+  <circle class="fade-anim delay-5 st36" cx="1906.88" cy="1892.29" r="3"/>
+  <ellipse class="fade-anim delay-6 st35" cx="1926.88" cy="1877.29" rx="3" ry="6" transform="translate(-728.3 1444.71) rotate(-35)"/>
+  <circle class="fade-anim delay-7 st0" cx="1910.38" cy="1903.71" r="3"/>
+  <ellipse class="fade-anim st34" cx="1930.38" cy="1923.71" rx="7" ry="4" transform="translate(-752.66 2401.59) rotate(-55)"/>
+  <circle class="fade-anim delay-1 st33" cx="1950.38" cy="1908.71" r="3"/>
+  <ellipse class="fade-anim delay-2 st36" cx="1970.38" cy="1928.71" rx="3" ry="5" transform="translate(-778.77 1717.77) rotate(-40)"/>
+  <circle class="fade-anim delay-3 st37" cx="1990.38" cy="1913.71" r="2"/>
+  <circle class="fade-anim delay-4 st0" cx="357.76" cy="1963.71" r="1.5"/>
+  <circle class="fade-anim delay-5 st33" cx="377.76" cy="1983.71" r="1"/>
+  <circle class="fade-anim delay-6 st36" cx="397.76" cy="1968.71" r="1.5"/>
+  <circle class="fade-anim delay-7 st34" cx="417.76" cy="1988.71" r="1"/>
+  <circle class="fade-anim st0" cx="437.76" cy="1973.71" r="1.5"/>
+  <circle class="fade-anim delay-1 st33" cx="741.39" cy="1952.65" r="1"/>
+  <circle class="fade-anim delay-2 st0" cx="761.39" cy="1972.65" r="1.5"/>
+  <circle class="fade-anim delay-3 st36" cx="781.39" cy="1957.65" r="1"/>
+  <circle class="fade-anim delay-4 st34" cx="801.39" cy="1977.65" r="1.5"/>
+  <circle class="fade-anim delay-5 st0" cx="821.39" cy="1962.65" r="1"/>
+  <circle class="fade-anim delay-6 st33" cx="944.52" cy="1948.36" r="1.5"/>
+  <circle class="fade-anim delay-7 st0" cx="964.52" cy="1968.36" r="1"/>
+  <circle class="fade-anim st36" cx="984.52" cy="1953.36" r="1.5"/>
+  <circle class="fade-anim delay-1 st34" cx="1004.52" cy="1973.36" r="1"/>
+  <circle class="fade-anim delay-2 st0" cx="1024.52" cy="1958.36" r="1.5"/>
+  <circle class="fade-anim delay-3 st33" cx="1234.97" cy="1934.71" r="1"/>
+  <circle class="fade-anim delay-4 st0" cx="1254.97" cy="1954.71" r="1.5"/>
+  <circle class="fade-anim delay-5 st36" cx="1274.97" cy="1939.71" r="1"/>
+  <circle class="fade-anim delay-6 st34" cx="1294.97" cy="1959.71" r="1.5"/>
+  <circle class="fade-anim delay-7 st0" cx="1314.97" cy="1944.71" r="1"/>
+  <circle class="fade-anim st33" cx="1579.19" cy="1932.27" r="1.5"/>
+  <circle class="fade-anim delay-1 st0" cx="1599.19" cy="1952.27" r="1"/>
+  <circle class="fade-anim delay-2 st36" cx="1619.19" cy="1937.27" r="1.5"/>
+  <circle class="fade-anim delay-3 st34" cx="1639.19" cy="1957.27" r="1"/>
+  <circle class="fade-anim delay-4 st0" cx="1659.19" cy="1942.27" r="1.5"/>
+  <circle class="fade-anim delay-5 st33" cx="1946.88" cy="1917.29" r="1"/>
+  <circle class="fade-anim delay-6 st0" cx="1966.88" cy="1937.29" r="1.5"/>
+  <circle class="fade-anim delay-7 st36" cx="1900.38" cy="1968.71" r="1"/>
+  <circle class="fade-anim st34" cx="1920.38" cy="1988.71" r="1.5"/>
+  <circle class="fade-anim delay-1 st0" cx="1940.38" cy="1973.71" r="1"/>
+  <ellipse class="fade-anim delay-2 st35" cx="1135" cy="850" rx="11" ry="3" transform="translate(20.2 1726.33) rotate(-75)"/>
+  <ellipse class="fade-anim delay-3 st33" cx="1150" cy="870" rx="9" ry="2" transform="translate(-32.79 1694.87) rotate(-72)"/>
+  <ellipse class="fade-anim delay-4 st0" cx="1162" cy="888" rx="7" ry="2" transform="translate(-69.87 1676.21) rotate(-70)"/>
+  <ellipse class="fade-anim delay-5 st36" cx="1172" cy="904" rx="6" ry="2" transform="translate(-105.21 1652.02) rotate(-68)"/>
+  <ellipse class="fade-anim delay-6 st34" cx="1182" cy="918" rx="5" ry="1" transform="translate(-137.4 1624.43) rotate(-66)"/>
+  <ellipse class="fade-anim delay-7 st35" cx="1138" cy="1050" rx="12" ry="3" transform="translate(-185 1854.5) rotate(-74)"/>
+  <ellipse class="fade-anim st33" cx="1154" cy="1072" rx="10" ry="2" transform="translate(-235.3 1814.12) rotate(-71)"/>
+  <ellipse class="fade-anim delay-1 st0" cx="1167" cy="1092" rx="8" ry="2" transform="translate(-270.69 1790.15) rotate(-69)"/>
+  <ellipse class="fade-anim delay-2 st36" cx="1178" cy="1110" rx="6" ry="2" transform="translate(-304.04 1760.64) rotate(-67)"/>
+  <ellipse class="fade-anim delay-3 st34" cx="1188" cy="1126" rx="5" ry="1" transform="translate(-334.57 1726.83) rotate(-65)"/>
+  <ellipse class="fade-anim delay-4 st35" cx="1140" cy="1250" rx="13" ry="3" transform="translate(-388.68 1974.72) rotate(-73)"/>
+  <ellipse class="fade-anim delay-5 st33" cx="1157" cy="1275" rx="11" ry="2" transform="translate(-436.83 1926.15) rotate(-70)"/>
+  <ellipse class="fade-anim delay-6 st0" cx="1171" cy="1297" rx="9" ry="2" transform="translate(-470.22 1896.87) rotate(-68)"/>
+  <ellipse class="fade-anim delay-7 st36" cx="1183" cy="1317" rx="7" ry="2" transform="translate(-501.31 1862.05) rotate(-66)"/>
+  <ellipse class="fade-anim st34" cx="1194" cy="1335" rx="5" ry="1" transform="translate(-529.31 1822.93) rotate(-64)"/>
+  <ellipse class="fade-anim delay-1 st35" cx="1142" cy="1450" rx="14" ry="3" transform="translate(-589.93 2088.03) rotate(-72)"/>
+  <ellipse class="fade-anim delay-2 st33" cx="1160" cy="1478" rx="12" ry="2" transform="translate(-635.54 2031.29) rotate(-69)"/>
+  <ellipse class="fade-anim delay-3 st0" cx="1175" cy="1503" rx="10" ry="2" transform="translate(-667.63 1997.32) rotate(-67)"/>
+  <ellipse class="fade-anim delay-4 st36" cx="1188" cy="1526" rx="8" ry="2" transform="translate(-697.1 1957.78) rotate(-65)"/>
+  <ellipse class="fade-anim delay-5 st34" cx="1200" cy="1547" rx="6" ry="1" transform="translate(-723.18 1913.88) rotate(-63)"/>
+  <circle class="drip-anim st35" cx="1128" cy="820" r="4"/>
+  <circle class="drip-anim delay-1 st33" cx="1127" cy="850" r="4"/>
+  <circle class="drip-anim delay-2 st0" cx="1126" cy="880" r="3"/>
+  <circle class="drip-anim delay-3 st36" cx="1125" cy="910" r="3"/>
+  <circle class="drip-anim delay-4 st34" cx="1124" cy="940" r="2"/>
+  <circle class="drip-anim delay-5 st37" cx="1123" cy="968" r="2"/>
+  <circle class="drip-anim delay-6 st35" cx="1130" cy="1020" r="4"/>
+  <circle class="drip-anim delay-7 st33" cx="1129" cy="1050" r="4"/>
+  <circle class="drip-anim st0" cx="1128" cy="1080" r="3"/>
+  <circle class="drip-anim delay-1 st36" cx="1127" cy="1110" r="3"/>
+  <circle class="drip-anim delay-2 st34" cx="1126" cy="1140" r="2"/>
+  <circle class="drip-anim delay-3 st37" cx="1125" cy="1168" r="2"/>
+  <circle class="drip-anim delay-4 st35" cx="1132" cy="1220" r="4"/>
+  <circle class="drip-anim delay-5 st33" cx="1131" cy="1250" r="4"/>
+  <circle class="drip-anim delay-6 st0" cx="1130" cy="1280" r="3"/>
+  <circle class="drip-anim delay-7 st36" cx="1129" cy="1310" r="3"/>
+  <circle class="drip-anim st34" cx="1128" cy="1340" r="2"/>
+  <circle class="drip-anim delay-1 st37" cx="1127" cy="1368" r="2"/>
+  <circle class="drip-anim delay-2 st35" cx="1134" cy="1420" r="4"/>
+  <circle class="drip-anim delay-3 st33" cx="1133" cy="1450" r="4"/>
+  <circle class="drip-anim delay-4 st0" cx="1132" cy="1480" r="3"/>
+  <circle class="drip-anim delay-5 st36" cx="1131" cy="1510" r="3"/>
+  <circle class="drip-anim delay-6 st34" cx="1130" cy="1540" r="2"/>
+  <circle class="drip-anim delay-7 st37" cx="1129" cy="1568" r="2"/>
+  <circle class="drip-anim st35" cx="1126" cy="1620" r="4"/>
+  <circle class="drip-anim delay-1 st33" cx="1125" cy="1650" r="4"/>
+  <circle class="drip-anim delay-2 st0" cx="1124" cy="1680" r="3"/>
+  <circle class="drip-anim delay-3 st36" cx="1123" cy="1710" r="3"/>
+  <circle class="drip-anim delay-4 st34" cx="1122" cy="1740" r="2"/>
+  <circle class="drip-anim delay-5 st37" cx="1121" cy="1768" r="2"/>
+  <circle class="splatter-anim paper-sway st35" cx="950" cy="850" r="5"/>
+  <circle class="splatter-anim paper-sway delay-1 st33" cx="970" cy="855" r="4"/>
+  <circle class="splatter-anim paper-sway delay-2 st0" cx="990" cy="865" r="3"/>
+  <circle class="splatter-anim paper-sway delay-3 st36" cx="1010" cy="870" r="3"/>
+  <circle class="splatter-anim paper-sway delay-4 st34" cx="1030" cy="880" r="2"/>
+  <ellipse class="splatter-anim paper-sway delay-5 st0" cx="960" cy="875" rx="3" ry="6" transform="translate(-328.27 708.88) rotate(-35)"/>
+  <ellipse class="splatter-anim paper-sway delay-6 st33" cx="980" cy="890" rx="2" ry="5" transform="translate(-342.8 838.15) rotate(-40)"/>
+  <ellipse class="splatter-anim paper-sway delay-7 st36" cx="1000" cy="900" rx="2" ry="4" transform="translate(-342.11 806.45) rotate(-38)"/>
+  <circle class="splatter-anim paper-sway st35" cx="900" cy="1050" r="5"/>
+  <circle class="splatter-anim paper-sway delay-1 st33" cx="920" cy="1055" r="4"/>
+  <circle class="splatter-anim paper-sway delay-2 st0" cx="940" cy="1065" r="3"/>
+  <circle class="splatter-anim paper-sway delay-3 st36" cx="960" cy="1070" r="3"/>
+  <circle class="splatter-anim paper-sway delay-4 st34" cx="980" cy="1080" r="2"/>
+  <ellipse class="splatter-anim paper-sway delay-5 st0" cx="910" cy="1075" rx="3" ry="6" transform="translate(-458.07 740.19) rotate(-36)"/>
+  <ellipse class="splatter-anim paper-sway delay-6 st33" cx="930" cy="1090" rx="2" ry="5" transform="translate(-490.48 902.26) rotate(-42)"/>
+  <ellipse class="splatter-anim paper-sway delay-7 st36" cx="950" cy="1100" rx="2" ry="4" transform="translate(-480.54 842.99) rotate(-39)"/>
+  <circle class="splatter-anim paper-sway st35" cx="850" cy="1250" r="5"/>
+  <circle class="splatter-anim paper-sway delay-1 st33" cx="870" cy="1255" r="4"/>
+  <circle class="splatter-anim paper-sway delay-2 st0" cx="890" cy="1265" r="3"/>
+  <circle class="splatter-anim paper-sway delay-3 st36" cx="910" cy="1270" r="3"/>
+  <circle class="splatter-anim paper-sway delay-4 st34" cx="930" cy="1280" r="2"/>
+  <ellipse class="splatter-anim paper-sway delay-5 st0" cx="860" cy="1275" rx="3" ry="6" transform="translate(-594.14 774.3) rotate(-37)"/>
+  <ellipse class="splatter-anim paper-sway delay-6 st33" cx="880" cy="1290" rx="2" ry="5" transform="translate(-643.37 946.71) rotate(-43)"/>
+  <ellipse class="splatter-anim paper-sway delay-7 st36" cx="900" cy="1300" rx="2" ry="4" transform="translate(-625.06 882.65) rotate(-40)"/>
+  <circle class="splatter-anim paper-sway st35" cx="800" cy="1450" r="5"/>
+  <circle class="splatter-anim paper-sway delay-1 st33" cx="820" cy="1455" r="4"/>
+  <circle class="splatter-anim paper-sway delay-2 st0" cx="840" cy="1465" r="3"/>
+  <circle class="splatter-anim paper-sway delay-3 st36" cx="860" cy="1470" r="3"/>
+  <circle class="splatter-anim paper-sway delay-4 st34" cx="880" cy="1480" r="2"/>
+  <ellipse class="splatter-anim paper-sway delay-5 st0" cx="810" cy="1475" rx="3" ry="6" transform="translate(-736.39 811.37) rotate(-38)"/>
+  <ellipse class="splatter-anim paper-sway delay-6 st33" cx="830" cy="1490" rx="2" ry="5" transform="translate(-802.09 994.75) rotate(-44)"/>
+  <ellipse class="splatter-anim paper-sway delay-7 st36" cx="850" cy="1500" rx="2" ry="4" transform="translate(-775.59 925.59) rotate(-41)"/>
+  <circle class="fade-anim delay-6 st0" cx="1000" cy="1560" r="2"/>
+  <circle class="fade-anim delay-7 st33" cx="1020" cy="1575" r="2"/>
+  <circle class="fade-anim st36" cx="990" cy="1595" r="2"/>
+  <circle class="fade-anim delay-1 st0" cx="1010" cy="1615" r="2"/>
+  <circle class="fade-anim delay-2 st34" cx="980" cy="1635" r="2"/>
+  <circle class="fade-anim delay-3 st37" cx="1005" cy="1650" r="2"/>
+  <circle class="fade-anim delay-4 st33" cx="995" cy="1670" r="2"/>
+  <circle class="fade-anim delay-5 st0" cx="750" cy="950" r="3"/>
+  <circle class="fade-anim delay-6 st33" cx="770" cy="970" r="3"/>
+  <circle class="fade-anim delay-7 st36" cx="790" cy="990" r="2"/>
+  <circle class="fade-anim st34" cx="810" cy="1010" r="2"/>
+  <circle class="fade-anim delay-1 st0" cx="830" cy="1030" r="2"/>
+  <circle class="fade-anim delay-2 st33" cx="700" cy="1150" r="3"/>
+  <circle class="fade-anim delay-3 st0" cx="720" cy="1170" r="3"/>
+  <circle class="fade-anim delay-4 st36" cx="740" cy="1190" r="2"/>
+  <circle class="fade-anim delay-5 st34" cx="760" cy="1210" r="2"/>
+  <circle class="fade-anim delay-6 st37" cx="780" cy="1230" r="2"/>
+  <circle class="fade-anim delay-7 st0" cx="650" cy="1350" r="3"/>
+  <circle class="fade-anim st33" cx="670" cy="1370" r="3"/>
+  <circle class="fade-anim delay-1 st36" cx="690" cy="1390" r="2"/>
+  <circle class="fade-anim delay-2 st34" cx="710" cy="1410" r="2"/>
+  <circle class="fade-anim delay-3 st0" cx="730" cy="1430" r="2"/>
+  <circle class="fade-anim delay-4 st33" cx="600" cy="1550" r="3"/>
+  <circle class="fade-anim delay-5 st0" cx="620" cy="1570" r="3"/>
+  <circle class="fade-anim delay-6 st36" cx="640" cy="1590" r="2"/>
+  <circle class="fade-anim delay-7 st34" cx="660" cy="1610" r="2"/>
+  <circle class="fade-anim st37" cx="680" cy="1630" r="2"/>
+  <ellipse class="fade-anim delay-1 st33" cx="287.76" cy="2113.71" rx="4" ry="7" transform="translate(-1410.34 822.57) rotate(-45)"/>
+  <circle class="fade-anim delay-5 st0" cx="437.76" cy="2050.71" r="3"/>
+  <circle class="fade-anim delay-7 st36" cx="681.39" cy="2045.65" r="2"/>
+  <ellipse class="fade-anim st35" cx="791.39" cy="2045.65" rx="4" ry="6" transform="translate(-1057.17 832.37) rotate(-35)"/>
+  <circle class="fade-anim delay-2 st33" cx="884.52" cy="2084.36" r="2"/>
+  <circle class="fade-anim delay-3 st0" cx="994.52" cy="2045.65" r="3"/>
+  <ellipse class="fade-anim delay-4 st33" cx="1014.52" cy="2045.65" rx="5" ry="3" transform="translate(-1252.7 1530.3) rotate(-50)"/>
+  <circle class="fade-anim delay-5 st36" cx="1034.52" cy="2045.65" r="2"/>
+  <ellipse class="fade-anim delay-6 st0" cx="1284.97" cy="2056.71" rx="3" ry="6" transform="translate(-1032.97 1311.36) rotate(-40)"/>
+  <circle class="fade-anim delay-7 st33" cx="1304.97" cy="2056.71" r="3"/>
+  <circle class="fade-anim st36" cx="1324.97" cy="2056.71" r="2"/>
+  <circle class="fade-anim delay-1 st34" cx="1629.19" cy="2082.27" r="3"/>
+  <ellipse class="fade-anim delay-2 st0" cx="1649.19" cy="2082.27" rx="5" ry="3" transform="translate(-1010.63 2243.13) rotate(-55)"/>
+  <circle class="fade-anim delay-3 st33" cx="1886.88" cy="2087.29" r="2"/>
+  <ellipse class="fade-anim delay-4 st0" cx="1910.38" cy="2087.29" rx="3" ry="6" transform="translate(-861.15 1476.2) rotate(-35)"/>
+  <circle class="fade-anim delay-5 st33" cx="1930.38" cy="2087.29" r="3"/>
+  <circle class="fade-anim delay-6 st36" cx="1950.38" cy="2087.29" r="2"/>
+  <circle class="fade-anim delay-4 st0" cx="1050" cy="880" r="1.5"/>
+  <circle class="fade-anim delay-5 st33" cx="1060" cy="900" r="1"/>
+  <circle class="fade-anim delay-6 st36" cx="1070" cy="920" r="1.5"/>
+  <circle class="fade-anim delay-7 st0" cx="1080" cy="940" r="1"/>
+  <circle class="fade-anim st33" cx="1045" cy="1080" r="1.5"/>
+  <circle class="fade-anim delay-1 st0" cx="1055" cy="1100" r="1"/>
+  <circle class="fade-anim delay-2 st36" cx="1065" cy="1120" r="1.5"/>
+  <circle class="fade-anim delay-3 st34" cx="1075" cy="1140" r="1"/>
+  <circle class="fade-anim delay-4 st0" cx="1040" cy="1280" r="1.5"/>
+  <circle class="fade-anim delay-5 st33" cx="1050" cy="1300" r="1"/>
+  <circle class="fade-anim delay-6 st36" cx="1060" cy="1320" r="1.5"/>
+  <circle class="fade-anim delay-7 st34" cx="1070" cy="1340" r="1"/>
+  <circle class="fade-anim st33" cx="1035" cy="1480" r="1.5"/>
+  <circle class="fade-anim delay-1 st0" cx="1045" cy="1500" r="1"/>
+  <circle class="fade-anim delay-2 st36" cx="1055" cy="1520" r="1.5"/>
+  <circle class="fade-anim delay-3 st34" cx="1065" cy="1540" r="1"/>
+  <path class="drip-anim delay-4 st28" d="M1125,1000l-1,40"/>
+  <path class="drip-anim delay-5 st14" d="M1127,1200l-1,40"/>
+  <path class="drip-anim delay-6 st28" d="M1129,1400l-1,40"/>
+  <path class="drip-anim delay-7 st14" d="M1126,1600l-1,40"/>
+  <circle class="fade-anim delay-6 st0" cx="1050" cy="880" r="1.5"/>
+  <circle class="fade-anim delay-7 st33" cx="1060" cy="900" r="1"/>
+  <circle class="fade-anim st36" cx="1070" cy="920" r="1.5"/>
+  <circle class="fade-anim delay-1 st0" cx="1080" cy="940" r="1"/>
+  <circle class="fade-anim delay-2 st33" cx="1045" cy="1080" r="1.5"/>
+  <circle class="fade-anim delay-3 st0" cx="1055" cy="1100" r="1"/>
+  <circle class="fade-anim delay-4 st36" cx="1065" cy="1120" r="1.5"/>
+  <circle class="fade-anim delay-5 st34" cx="1075" cy="1140" r="1"/>
+  <circle class="fade-anim delay-6 st0" cx="1040" cy="1280" r="1.5"/>
+  <circle class="fade-anim delay-7 st33" cx="1050" cy="1300" r="1"/>
+  <circle class="fade-anim st36" cx="1060" cy="1320" r="1.5"/>
+  <circle class="fade-anim delay-1 st34" cx="1070" cy="1340" r="1"/>
+  <circle class="fade-anim delay-2 st33" cx="1035" cy="1480" r="1.5"/>
+  <circle class="fade-anim delay-3 st0" cx="1045" cy="1500" r="1"/>
+  <circle class="fade-anim delay-4 st36" cx="1055" cy="1520" r="1.5"/>
+  <circle class="fade-anim delay-5 st34" cx="1065" cy="1540" r="1"/>
+  <path class="drip-anim delay-6 st28" d="M1125,1000l-1,40"/>
+  <path class="drip-anim delay-7 st14" d="M1127,1200l-1,40"/>
+  <path class="drip-anim st28" d="M1129,1400l-1,40"/>
+  <path class="drip-anim delay-1 st14" d="M1126,1600l-1,40"/>
+</svg>

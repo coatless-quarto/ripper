@@ -1,6 +1,11 @@
-# ripper <img src="docs/ripper-animated-logo.svg" align ="right" alt="" width ="150"/>
+---
+title: "Home"
+format: 
+  html:
+    toc: false
+---
 
-A Quarto extension that automatically extracts code blocks from your documents and splits them by programming language into separate, executable script files.
+`ripper` is a Quarto extension that automatically extracts code blocks from your documents and splits them by programming language into separate, executable script files.
 
 ## Installation
 

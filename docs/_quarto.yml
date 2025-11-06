@@ -1,0 +1,38 @@
+project:
+  type: website
+
+website:
+  title: "ripper"
+  reader-mode: true
+  repo-url: https://github.com/coatless-quarto/ripper/
+  repo-actions: [edit, issue]
+  sidebar:
+    logo: "ripper-animated-logo.svg"
+    logo-alt: "A hexagon logo for the ripper extension."
+    style: "floating"
+    search: true
+    tools:
+      - icon: github
+        href: https://github.com/coatless-quarto/ripper/
+    contents: 
+      - text: "Home"
+        file: index.qmd
+      - section: "Demos"
+        contents:
+        - text: "Minimal Example"
+          file: qripper-minimal.qmd
+        - text: "Mixed Example"
+          file: qripper-mixed.qmd
+      - section: "Support"
+        contents:
+        - text: "FAQ"
+          href: qripper-faq.qmd
+        - text: "Submit an issue"
+          href: https://github.com/coatless-quarto/ripper/issues/new/choose
+      - section: "Extra"
+        contents:
+        - qripper-release-notes.qmd
+
+format: 
+  html:
+    toc: true

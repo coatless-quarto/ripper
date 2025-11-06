@@ -1,0 +1,17 @@
+---
+title: "Release Notes"
+date: "10-30-2025"
+date-modified: last-modified
+engine: markdown
+format: 
+  html:
+    toc: true
+---
+
+# 0.0.0-dev.1: ???? (??-??-????)
+
+## Features
+
+- `ripper` focuses on extracting code blocks from Quarto documents based on their programming language and saving them into separate script files.
+   - Configurable options allow users to include or exclude YAML metadata in the output scripts.
+
