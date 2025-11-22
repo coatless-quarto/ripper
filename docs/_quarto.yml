@@ -19,10 +19,12 @@ website:
         file: index.qmd
       - section: "Demos"
         contents:
-        - text: "Minimal Example"
+        - text: "Default Configuration"
           file: qripper-minimal.qmd
-        - text: "Mixed Example"
-          file: qripper-mixed.qmd
+        - text: "Custom Placement"
+          file: qripper-custom-placement.qmd
+        - text: "RevealJS Presentation"
+          file: qripper-revealjs.qmd
       - section: "Support"
         contents:
         - text: "FAQ"

@@ -8,10 +8,11 @@ format:
     toc: true
 ---
 
-# 0.0.0-dev.1: ???? (??-??-????)
+# 0.0.1: Everyday is Halloween, isn't it? For some of us (11-22-2025)
 
 ## Features
 
 - `ripper` focuses on extracting code blocks from Quarto documents based on their programming language and saving them into separate script files.
-   - Configurable options allow users to include or exclude YAML metadata in the output scripts.
+  - Supports multiple programming languages, including R and Python.
+  - Configurable options for script generation, such as including YAML headers and customizing script link placement.
 

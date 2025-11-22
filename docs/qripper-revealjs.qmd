@@ -1,0 +1,61 @@
+---
+title: "Ripper and RevealJS"
+format: html
+---
+
+This document demonstrates the `ripper` Quarto extension within a RevealJS presentation.
+
+## Presentation
+
+Open presentation in a new tab: [qripper-revealjs-slides.qmd](qripper-revealjs-slides.qmd)
+
+```{=html}
+<iframe src="qripper-revealjs-slides.html" width="100%" height="600px" style="border:none;"></iframe>
+```
+
+## Source
+
+:::{.callout-note}
+You must set `echo: true` in the YAML front matter to ensure that code chunks are displayed in the slides and, thus, can be extracted by the `ripper` extension.
+:::
+
+````markdown
+---
+title: "Ripper with RevealJS"
+author: "Your Name"
+format: revealjs
+echo: true
+extensions:
+  ripper:
+    script-links-position: top
+filters: [ripper]
+---
+
+
+## Slide
+
+This is a RevealJS presentation testing the ripper extension.
+
+## R Code
+
+```{{r}}
+# Load data
+data <- iris
+summary(data)
+```
+
+## Python Code
+
+```{{python}}
+import pandas as pd
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+print(arr.mean())
+```
+
+
+## Conclusion
+
+Results and findings.
+````

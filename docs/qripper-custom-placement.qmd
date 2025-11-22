@@ -1,0 +1,84 @@
+---
+title: "Custom Script Links Placement"
+format:  html
+extensions:
+  ripper:
+    include-yaml: true
+    script-links-position: custom
+    debug: true
+filters:
+  - ripper
+---
+
+## Overview
+
+This document demonstrates the use of the `ripper` extension in a mixed R and Python Quarto document with customized settings.
+
+The document configuration is given as:
+
+````markdown
+---
+title: "Mixed Language Analysis"
+format:
+  html:
+    keep-md: true
+extensions:
+  ripper:
+    include-yaml: true
+    script-links-position: custom
+    
+    debug: true
+filters:
+  - ripper
+---
+````
+
+The settings specify that the extracted scripts should include YAML headers and that the links to the scripts should be placed at a custom location within the document by creating a div with the id `#ripper-links`.
+
+e.g.
+
+```markdown
+:::{#ripper-links}
+:::
+```
+
+This div will be replaced by the `ripper` extension with links to the generated script files, which we can see below.
+
+----
+
+:::{#ripper-links}
+:::
+
+----
+
+The remaining sections contain code blocks in R and Python that will be extracted by the `ripper` extension.
+
+## R Analysis
+
+This section demonstrates R code for data analysis.
+
+```{r}
+#| label: r-analysis
+data <- mtcars
+summary(data)
+```
+
+## Python Analysis
+
+This section shows Python code for data manipulation.
+
+```{python}
+#| label: python-analysis
+dictionary = {"x": [1, 2, 3], "y": [4, 5, 6]}
+print(dictionary.keys())
+```
+
+## More R Code
+
+Additional R code for plotting.
+
+```{r}
+#| label: r-plotting
+#| echo: false
+plot(mtcars$mpg, mtcars$hp)
+```

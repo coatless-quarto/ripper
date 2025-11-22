@@ -1,0 +1,64 @@
+---
+title: "Ripper with RevealJS"
+format: revealjs
+echo: true
+extensions:
+  ripper:
+    script-links-position: top
+filters: [ripper]
+---
+
+## Introduction
+
+This is a RevealJS presentation showing how the `ripper` extension integrates with slides to provide code extraction and links.
+
+## Ripper Integration
+
+When rendered as a RevealJS presentation, the extension automatically:
+
+1. Detects RevealJS format
+2. Creates a non-titled slide (e.g. empty `##`)
+3. Adds Code links
+4. Places at end of presentation (can be configured)
+
+## Example Configuration
+
+The extension in the YAML front matter can be set up as follows:
+
+```yaml
+title: "My RevealJS Presentation"
+author: "Your Name"
+format: revealjs
+echo: true
+extensions:
+  ripper:
+    script-links-position: top
+filters: [ripper]
+```
+
+:::{.callout-important}
+The `echo: true` option is set to ensure that code chunks are displayed in the slides and, thus, can be extracted by the `ripper` extension.
+:::
+
+## R Code
+
+```{r}
+# Load data
+data <- iris
+summary(data)
+```
+
+## Python Code
+
+```{python}
+import pandas as pd
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+print(arr.mean())
+```
+
+
+## Conclusion
+
+Results and findings.
