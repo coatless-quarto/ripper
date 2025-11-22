@@ -5,13 +5,26 @@ filters:
   - ripper
 ---
 
-This example shows the extension's default behavior.
+When rendered, the `ripper` extension will extract the code blocks and create separate script files for each programming language. This example shows the extension's default behaviors given the configuration below to a Quarto document with R and Python code blocks. 
+
+````markdown
+---
+title: "Minimal Example"
+format: html
+filters:
+  - ripper
+---
+````
+
+## R Code
 
 ```{r}
 #| label: simple-calculation
 x <- 1:10
 mean(x)
 ```
+
+## Python Code
 
 ```{python}
 #| label: python-calculation
