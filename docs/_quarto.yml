@@ -20,7 +20,7 @@ website:
       - section: "Demos"
         contents:
         - text: "Default Configuration"
-          file: qripper-minimal.qmd
+          file: qripper-default-config.qmd
         - text: "Custom Placement"
           file: qripper-custom-placement.qmd
         - text: "RevealJS Presentation"

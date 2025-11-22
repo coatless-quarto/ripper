@@ -1,5 +1,5 @@
 ---
-title: "Minimal Example"
+title: "Default Configuration"
 format: html
 filters:
   - ripper
