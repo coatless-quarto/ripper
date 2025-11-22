@@ -48,6 +48,9 @@ Extracted scripts will be created in the same directory with names based on your
 - `my-analysis.R` - All R code extracted
 - `my-analysis.py` - All Python code extracted
 
+Links to the generated script files will be included in your rendered
+document under a "Script file(s)" section or at a custom location
+if specified.
 
 ## Configuration
 
@@ -67,12 +70,12 @@ extensions:
 ---
 ```
 
-### Option: `include-yaml`
+#### Option: `include-yaml`
 
 - **`true` (default)**: Includes YAML frontmatter as commented lines at the top of each script
 - **`false`**: Extracts only code with no YAML comments
 
-### Option: `script-links-position`
+#### Option: `script-links-position`
 
 Controls where the "Script file(s)" section with links to generated scripts appears:
 
@@ -81,7 +84,7 @@ Controls where the "Script file(s)" section with links to generated scripts appe
 - **`"custom"`**: Places the section where you define a div with `id="ripper-links"` in your document
 - **`"none"`**: Suppresses the section entirely
 
-#### Custom Positioning Example
+##### Custom Positioning Example
 
 - To place the section at a specific location in your document, use `script-links-position: "custom"` and add a div with the id `ripper-links`.
 
@@ -110,14 +113,14 @@ Some introductory text here.
 ````
 
 
-### Option: `output-name`
+#### Option: `output-name`
 
 - Allows you to specify a custom base name for the generated script files instead of using the document name.
 - For example, if you set `output-name: "my-custom-name"`, rendering `my-analysis.qmd` would produce:
   - `my-custom-name.R`
   - `my-custom-name.py`
 
-### Option: `debug`
+#### Option: `debug`
 
 - Enables verbose logging to help troubleshoot issues or understand the extension's behavior.
 
@@ -150,9 +153,9 @@ Some introductory text here.
 ### Related Quarto Extensions
 
 1. **[sorting-hat](https://github.com/coatless-quarto/sorting-hat)**: Conditionally retain or omit code blocks by language in rendered documents. 
-  - Use with ripper to control what appears in your document while extracting all visible code to scripts.
+    - Use with ripper to control what appears in your document while extracting all visible code to scripts.
 2. **[regurgitate](https://github.com/coatless-quarto/regurgitate)**: Automatically create code appendices in your rendered document, organized by language or document order. 
-  - Complements ripper by providing in-document code listings while ripper creates external executable files.
+    - Complements ripper by providing in-document code listings while ripper creates external executable files.
 
 ### Historical Context
 
