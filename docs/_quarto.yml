@@ -35,6 +35,8 @@ website:
         contents:
         - qripper-release-notes.qmd
 
+callout-appearance: simple
+
 format: 
   html:
     toc: true

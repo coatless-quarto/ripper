@@ -87,12 +87,12 @@ Controls where the "Script file(s)" section with links to generated scripts appe
 
 - **`"bottom"` (default)**: Places the section at the end of the document
 - **`"top"`**: Places the section at the beginning of the document
-- **`"custom"`**: Places the section where you define a div with `id="ripper-links"` in your document
+- **`"custom"`**: Places the section where you define a Div with `#ripper-links` in your document
 - **`"none"`**: Suppresses the section entirely
 
 ##### Custom Positioning Example
 
-- To place the section at a specific location in your document, use `script-links-position: "custom"` and add a div with the id `ripper-links`.
+- To place the section at a specific location in your document, use `script-links-position: "custom"` and add a Div with the id `#ripper-links`.
 
 ````md
 ---

@@ -26,7 +26,6 @@ extensions:
   ripper:
     include-yaml: true
     script-links-position: custom
-    
     debug: true
 filters:
   - ripper
