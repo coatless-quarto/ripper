@@ -193,7 +193,10 @@ local function read_config(meta)
     end
 
     if config["output-dir"] then
-      output_dir = pandoc.utils.stringify(config["output-dir"])
+      local configured_output_dir = pandoc.utils.stringify(config["output-dir"])
+      if configured_output_dir ~= "" then
+        output_dir = configured_output_dir
+      end
     end
   end
 
@@ -239,7 +242,7 @@ end
 local function create_file_list(files)
   local list_items = {}
   for _, file_info in ipairs(files) do
-    -- Use link_path for href (includes output-dir), filename for display
+    -- Use link_path (if present) or filename for both display text and href
     local display_path = file_info.link_path or file_info.filename
     local link = pandoc.Link(
       {pandoc.Str(display_path)},
@@ -387,11 +390,13 @@ local function write_all_scripts(base_name, meta)
   -- Determine output directory and ensure it exists
   local output_path_prefix = ""
   if output_dir then
-    debug_log("Using output directory: " .. output_dir)
-    if not ensure_directory_exists(output_dir) then
+    -- Normalize to avoid trailing slashes (e.g., "scripts/" -> "scripts")
+    local normalized_output_dir = output_dir:gsub("/+$", "")
+    debug_log("Using output directory: " .. normalized_output_dir)
+    if not ensure_directory_exists(normalized_output_dir) then
       return generated_files  -- Return empty if we can't create the directory
     end
-    output_path_prefix = output_dir .. "/"
+    output_path_prefix = normalized_output_dir .. "/"
   end
 
   for lang, blocks in pairs(code_blocks) do
