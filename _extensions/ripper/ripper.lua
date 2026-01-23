@@ -31,6 +31,11 @@ local custom_base_name = nil  -- optional custom output name
 -- @field debug
 local debug = false
 
+--- Output directory for generated script files.
+-- If nil, scripts are written to the same directory as the document.
+-- @field output_dir
+local output_dir = nil
+
 --- Language to file extension mapping.
 -- Maps language names to their corresponding file extensions.
 -- @table lang_extensions
@@ -186,11 +191,16 @@ local function read_config(meta)
     if config["debug"] ~= nil then
       debug = config["debug"]
     end
+
+    if config["output-dir"] then
+      output_dir = pandoc.utils.stringify(config["output-dir"])
+    end
   end
-  
-  debug_log("Configuration loaded: include_yaml=" .. tostring(include_yaml) .. 
-            ", script_links_position=" .. script_links_position .. 
+
+  debug_log("Configuration loaded: include_yaml=" .. tostring(include_yaml) ..
+            ", script_links_position=" .. script_links_position ..
             ", output_name=" .. tostring(custom_base_name or "auto") ..
+            ", output_dir=" .. tostring(output_dir or "same as document") ..
             ", debug=" .. tostring(debug))
 end
 
@@ -224,14 +234,16 @@ end
 
 --- Create a bullet list of file links.
 -- Converts file information into a Pandoc BulletList with clickable links.
--- @param files table Array of file info tables with 'filename' field
+-- @param files table Array of file info tables with 'filename' and 'link_path' fields
 -- @return pandoc.BulletList Bullet list containing file links
 local function create_file_list(files)
   local list_items = {}
   for _, file_info in ipairs(files) do
+    -- Use link_path for href (includes output-dir), filename for display
+    local display_path = file_info.link_path or file_info.filename
     local link = pandoc.Link(
-      {pandoc.Str(file_info.filename)},
-      file_info.filename
+      {pandoc.Str(display_path)},
+      display_path
     )
     table.insert(list_items, {pandoc.Plain({link})})
   end
@@ -339,6 +351,21 @@ local function write_script_file(filename, content, lang)
   end
 end
 
+--- Ensure a directory exists, creating it if necessary.
+-- Uses Pandoc's cross-platform filesystem API.
+-- @param dir_path string The directory path to create
+-- @return boolean True if directory exists or was created successfully
+local function ensure_directory_exists(dir_path)
+  debug_log("Ensuring directory exists: " .. dir_path)
+  local ok, err = pandoc.system.make_directory(dir_path, true)
+  if ok == nil and err then
+    debug_log("ERROR: Failed to create directory: " .. dir_path .. " - " .. tostring(err))
+    quarto.log.error("Failed to create directory: " .. dir_path)
+    return false
+  end
+  return true
+end
+
 --- Process all collected code blocks and write script files.
 -- Iterates through all languages, builds content, and writes files.
 -- @param base_name string The base filename (without extension)
@@ -346,32 +373,45 @@ end
 -- @return table Array of successfully created file info tables
 local function write_all_scripts(base_name, meta)
   debug_log("Writing all scripts with base name: " .. base_name)
-  
+
   local generated_files = {}
   local lang_count = 0
-  
+
   -- Count languages first for logging
   for _ in pairs(code_blocks) do
     lang_count = lang_count + 1
   end
-  
+
   debug_log("Found code blocks in " .. lang_count .. " language(s)")
-  
+
+  -- Determine output directory and ensure it exists
+  local output_path_prefix = ""
+  if output_dir then
+    debug_log("Using output directory: " .. output_dir)
+    if not ensure_directory_exists(output_dir) then
+      return generated_files  -- Return empty if we can't create the directory
+    end
+    output_path_prefix = output_dir .. "/"
+  end
+
   for lang, blocks in pairs(code_blocks) do
     if #blocks > 0 then
       local extension = lang_extensions[lang]
-      local filename = base_name .. extension
+      local script_filename = base_name .. extension
+      local full_path = output_path_prefix .. script_filename
       local content = build_file_content(lang, blocks, meta)
-      local file_info = write_script_file(filename, content, lang)
-      
+      local file_info = write_script_file(full_path, content, lang)
+
       if file_info then
+        -- Store the relative path for linking (includes output-dir if set)
+        file_info.link_path = full_path
         table.insert(generated_files, file_info)
       end
     end
   end
-  
+
   debug_log("Successfully created " .. #generated_files .. " file(s)")
-  
+
   return generated_files
 end
 

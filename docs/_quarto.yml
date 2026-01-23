@@ -21,6 +21,8 @@ website:
         contents:
         - text: "Default Configuration"
           file: qripper-default-config.qmd
+        - text: "Custom Output Directory"
+          file: qripper-output-dir.qmd
         - text: "Custom Placement"
           file: qripper-custom-placement.qmd
         - text: "RevealJS Presentation"

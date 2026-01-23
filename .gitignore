@@ -1,3 +1,9 @@
 /.luarc.json
 .DS_Store
 /docs/_site
+
+# Generated script files from ripper extension demos
+/docs/*.R
+/docs/*.py
+/docs/scripts/
+/docs/*_files/

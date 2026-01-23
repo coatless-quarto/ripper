@@ -1,0 +1,67 @@
+---
+title: "Custom Output Directory"
+format: html
+extensions:
+  ripper:
+    output-dir: scripts
+filters:
+  - ripper
+---
+
+## Overview
+
+This document demonstrates the `output-dir` option, which saves generated scripts to a separate directory instead of alongside the source document.
+
+The document configuration is:
+
+````markdown
+---
+title: "Custom Output Directory"
+format: html
+extensions:
+  ripper:
+    output-dir: scripts
+filters:
+  - ripper
+---
+````
+
+With this configuration, the extracted scripts will be saved to a `scripts/` folder relative to this document's location. The directory is created automatically if it doesn't exist.
+
+### Common Patterns
+
+**Save to a scripts folder next to the document:**
+
+```yaml
+output-dir: "scripts"
+```
+
+**Save to project root when document is in a subdirectory:**
+
+```yaml
+# If document is in docs/, this saves to project-root/scripts/
+output-dir: "../scripts"
+```
+
+**Combine with custom output name:**
+
+```yaml
+output-dir: "scripts"
+output-name: "analysis"  # Creates scripts/analysis.R, scripts/analysis.py
+```
+
+## R Code
+
+```{r}
+#| label: r-example
+data <- mtcars
+summary(data$mpg)
+```
+
+## Python Code
+
+```{python}
+#| label: python-example
+numbers = [1, 2, 3, 4, 5]
+print(f"Sum: {sum(numbers)}")
+```
