@@ -43,7 +43,7 @@ Render your document with Quarto:
 quarto render my-analysis.qmd
 ```
 
-Extracted scripts will be created in the same directory with names based on your document file name, e.g.
+Extracted scripts will be created in the same directory (or a custom directory via `output-dir`) with names based on your document file name, e.g.
 
 - `my-analysis.R` - All R code extracted
 - `my-analysis.py` - All Python code extracted
@@ -66,6 +66,7 @@ extensions:
     include-yaml: true               # Include YAML as comments (default: true)
     script-links-position: "bottom"  # Position of links section (default: "bottom")
     output-name: "my-scripts"        # Custom base name for output files (optional)
+    output-dir: "scripts"            # Directory to save scripts (optional)
     debug: false                     # Enable verbose logging (default: false)
 ---
 ```
@@ -119,6 +120,23 @@ Some introductory text here.
 - For example, if you set `output-name: "my-custom-name"`, rendering `my-analysis.qmd` would produce:
   - `my-custom-name.R`
   - `my-custom-name.py`
+
+#### Option: `output-dir`
+
+- Specifies a directory where generated script files should be saved.
+- Paths are relative to the document location.
+- The directory is created automatically if it doesn't exist.
+- Use `../` to navigate up from the document directory.
+
+##### Examples
+
+```yaml
+# Save scripts to a 'scripts' folder next to the document
+output-dir: "scripts"
+
+# Save scripts to project root when document is in docs/
+output-dir: "../scripts"
+```
 
 #### Option: `debug`
 
