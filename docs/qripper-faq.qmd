@@ -500,19 +500,13 @@ This will output detailed `[ripper]` messages showing:
 
 ## How can I add support for additional languages?
 
-Edit the `_extensions/coatless-quarto/ripper/ripper.lua` file and add entries to both tables:
+Edit the `_extensions/coatless-quarto/ripper/ripper.lua` file and add an entry to the `lang_specs` table
+with the language's file extension and comment style:
 
 ```lua
--- Add file extension
-lang_extensions = {
+local lang_specs = {
   ...
-  matlab = ".m",
-}
-
--- Add comment style
-comment_styles = {
-  ...
-  matlab = "%'",
+  matlab     = { ext = ".m",     comment = "%'" },
 }
 ```
 
