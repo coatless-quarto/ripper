@@ -94,14 +94,23 @@ end
 
 --- Extract a metadata field as a string.
 -- Safely extracts and stringifies a metadata field from the document's YAML.
+-- List values (e.g., several authors) are joined with ", ".
 -- @param meta table The metadata table
 -- @param field_name string The name of the field to extract
 -- @return string|nil The field value as a string, or nil if not present
 local function get_meta_field(meta, field_name)
-  if meta[field_name] then
-    return pandoc.utils.stringify(meta[field_name])
+  local value = meta[field_name]
+  if not value then
+    return nil
   end
-  return nil
+  if pandoc.utils.type(value) == "List" then
+    local items = {}
+    for _, item in ipairs(value) do
+      table.insert(items, pandoc.utils.stringify(item))
+    end
+    return table.concat(items, ", ")
+  end
+  return pandoc.utils.stringify(value)
 end
 
 --- Log a debug message if debug mode is enabled.
