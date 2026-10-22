@@ -51,9 +51,10 @@ Your project structure should look like:
 ```sh
 your-project/
 ├── _extensions/
-│   └── ripper/
-│       ├── _extension.yml
-│       └── ripper.lua
+│   └── coatless-quarto/
+│       └── ripper/
+│           ├── _extension.yml
+│           └── ripper.lua
 └── your-document.qmd
 ```
 
@@ -180,8 +181,16 @@ This will generate files like `analysis-scripts.R` and `analysis-scripts.py` ins
 
 ## Can I change the output directory for extracted scripts?
 
-Scripts are created in the same directory as your source document (`.qmd` file). To change this location, 
-you would need to modify the `ripper.lua` file to specify a different output path.
+Yes! Use the `output-dir` option:
+
+```yaml
+extensions:
+  ripper:
+    output-dir: "scripts"
+```
+
+The path is relative to your source document (`.qmd` file), and the directory is created if it doesn't exist.
+Without `output-dir`, scripts are created in the same directory as your source document.
 
 ## How do I hide the script links section?
 
@@ -354,7 +363,7 @@ This is a key difference from `quarto inspect` wrappers, which can preserve chun
 
 First, ensure that:
 
-1. The `{ripper}` extension is properly installed in your `_extensions/ripper/` directory
+1. The `{ripper}` extension is properly installed in your `_extensions/coatless-quarto/ripper/` directory
 2. You've added `filters: - ripper` to your document's YAML front matter (note the hyphen!)
 3. Your document contains code blocks with supported language identifiers
 4. Your code blocks are **visible** (not using `echo: false` or `include: false`)
