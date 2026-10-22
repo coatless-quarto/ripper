@@ -8,6 +8,34 @@ format:
     toc: true
 ---
 
+# 0.0.2-dev.1: ???? (??-??-????)
+
+## Breaking changes
+
+- ripper now requires Quarto 1.10 or later.
+
+## Features
+
+- `output-dir` saves the generated scripts to a separate directory instead of
+  next to the document. The path is relative to the document, the directory is
+  created if it doesn't exist, and the links section points to the scripts there.
+
+## Bug fixes
+
+- `include-yaml` headers now separate multiple authors with commas. Previously,
+  the names ran together, as in `#' author: Jane DoeJohn Smith`.
+- `script-links-position` now ignores letter case, so `Top` works like `top`.
+  An unrecognized value gives a warning and falls back to the default, `bottom`.
+  Previously, either one silently removed the links section.
+- ripper now lists the scripts in the links section in the order their
+  languages first appear in the document. Previously, the order could change
+  from one render to the next.
+
+## Documentation
+
+- The FAQ now describes the `output-dir` option and shows ripper under
+  `_extensions/coatless-quarto/ripper/`, where `quarto add` installs it.
+
 # 0.0.1: Everyday is Halloween, isn't it? For some of us (11-22-2025)
 
 ## Features
