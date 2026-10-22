@@ -190,7 +190,15 @@ local function read_config(meta)
     end
     
     if config["script-links-position"] then
-      script_links_position = pandoc.utils.stringify(config["script-links-position"])
+      local position = pandoc.utils.stringify(config["script-links-position"])
+      local normalized = position:lower()
+      if normalized == "top" or normalized == "bottom" or
+         normalized == "custom" or normalized == "none" then
+        script_links_position = normalized
+      else
+        quarto.log.warning("Invalid script-links-position '" .. position ..
+          "'. Expected one of: top, bottom, custom, none. Using 'bottom'.")
+      end
     end
     
     if config["output-name"] then
