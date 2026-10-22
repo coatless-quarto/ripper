@@ -6,6 +6,10 @@
 -- @table code_blocks
 local code_blocks = {}
 
+--- Languages in the order they first appear in the document.
+-- @table languages
+local languages = {}
+
 --- YAML metadata from the document.
 -- @field yaml_meta
 local yaml_meta = nil
@@ -173,6 +177,7 @@ end
 local function init_language(lang)
   if not code_blocks[lang] then
     code_blocks[lang] = {}
+    table.insert(languages, lang)
     debug_log("Initialized storage for language: " .. lang)
   end
 end
@@ -395,14 +400,8 @@ local function write_all_scripts(base_name, meta)
   debug_log("Writing all scripts with base name: " .. base_name)
 
   local generated_files = {}
-  local lang_count = 0
 
-  -- Count languages first for logging
-  for _ in pairs(code_blocks) do
-    lang_count = lang_count + 1
-  end
-
-  debug_log("Found code blocks in " .. lang_count .. " language(s)")
+  debug_log("Found code blocks in " .. #languages .. " language(s)")
 
   -- Determine output directory and ensure it exists
   local output_path_prefix = ""
@@ -416,7 +415,8 @@ local function write_all_scripts(base_name, meta)
     output_path_prefix = normalized_output_dir .. "/"
   end
 
-  for lang, blocks in pairs(code_blocks) do
+  for _, lang in ipairs(languages) do
+    local blocks = code_blocks[lang]
     if #blocks > 0 then
       local extension = lang_extensions[lang]
       local script_filename = base_name .. extension
