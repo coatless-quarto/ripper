@@ -36,6 +36,8 @@ website:
       - section: "Extra"
         contents:
         - qripper-release-notes.qmd
+        - href: https://blog.thecoatlessprofessor.com/projects/ripper/
+          text: "Blog posts"
 
 callout-appearance: simple
 
