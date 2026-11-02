@@ -60,7 +60,7 @@ your-project/
 
 ## Is the {ripper} extension compatible with all Quarto versions?
 
-The `{ripper}` extension requires Quarto v1.10 or later.
+The `{ripper}` extension requires Quarto v1.11 or later.
 
 ## Do I need to install any additional dependencies?
 
@@ -368,7 +368,7 @@ First, ensure that:
 3. Your document contains code blocks with supported language identifiers
 4. Your code blocks are **visible** (not using `echo: false` or `include: false`)
 5. You have write permissions in the document directory
-6. You're using Quarto v1.10 or later
+6. You're using Quarto v1.11 or later
 
 Enable debug mode to see detailed logging:
 
