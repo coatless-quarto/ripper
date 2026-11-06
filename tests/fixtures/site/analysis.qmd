@@ -1,0 +1,18 @@
+---
+title: "My Analysis"
+author: "Test Author"
+---
+
+```r
+x <- 1:10
+mean(x)
+```
+
+```python
+import math
+print(math.pi)
+```
+
+```javascript
+console.log(1 + 1);
+```
