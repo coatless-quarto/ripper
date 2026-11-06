@@ -149,22 +149,22 @@ output-dir: "../scripts"
 
 | Language   | Extension | Comment |
 |------------|-----------|---------|
-| R          | .R        | #'      |
-| Python     | .py       | #'      |
-| Julia      | .jl       | #'      |
-| Bash       | .sh       | #'      |
-| JavaScript | .js       | //'     |
-| TypeScript | .ts       | //'     |
-| SQL        | .sql      | --'     |
-| Rust       | .rs       | //'     |
-| Go         | .go       | //'     |
-| C++        | .cpp      | //'     |
-| C          | .c        | //'     |
-| Java       | .java     | //'     |
-| Scala      | .scala    | //'     |
-| Ruby       | .rb       | #'      |
-| Perl       | .pl       | #'      |
-| PHP        | .php      | //'     |
+| R          | .R        | #       |
+| Python     | .py       | #       |
+| Julia      | .jl       | #       |
+| Bash       | .sh       | #       |
+| JavaScript | .js       | //      |
+| TypeScript | .ts       | //      |
+| SQL        | .sql      | --      |
+| Rust       | .rs       | //      |
+| Go         | .go       | //      |
+| C++        | .cpp      | //      |
+| C          | .c        | //      |
+| Java       | .java     | //      |
+| Scala      | .scala    | //      |
+| Ruby       | .rb       | #       |
+| Perl       | .pl       | #       |
+| PHP        | .php      | //      |
 
 ## See Also
 

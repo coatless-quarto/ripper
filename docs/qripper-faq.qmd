@@ -106,27 +106,28 @@ extensions:
 
 The extension automatically selects the appropriate comment style for each language:
 
-- **Languages using `#'`**: R, Python, Julia, Bash, Ruby, Perl
-- **Languages using `//'`**: JavaScript, TypeScript, Rust, Go, C++, C, Java, Scala, PHP
-- **SQL**: Uses `--'` for comments
+- **Languages using `#`**: R, Python, Julia, Bash, Ruby, Perl
+- **Languages using `//`**: JavaScript, TypeScript, Rust, Go, C++, C, Java, Scala, PHP
+- **SQL**: Uses `--` for comments
 
 For example, in R:
 
 ```r
-#' ---
-#' title: My Analysis
-#' ---
-#' 
+# ---
+# title: My Analysis
+# ---
 ```
 
 In JavaScript:
 
 ```js
-//' ---
-//' title: My Analysis
-//' ---
-//' 
+// ---
+// title: My Analysis
+// ---
 ```
+
+The header uses plain comments, not knitr's `#'` spin comments.
+Quarto treats an `.R` file that starts with a `#' ---` block as a page, so a website's next render would try to render the script too.
 
 ## Can I customize the position of the script links section?
 
@@ -251,22 +252,22 @@ The extension supports 16 programming languages:
 
 | Language   | Extension | Comment Style |
 |------------|-----------|---------------|
-| R          | `.R`      | `#'`          |
-| Python     | `.py`     | `#'`          |
-| Julia      | `.jl`     | `#'`          |
-| Bash       | `.sh`     | `#'`          |
-| JavaScript | `.js`     | `//'`         |
-| TypeScript | `.ts`     | `//'`         |
-| SQL        | `.sql`    | `--'`         |
-| Rust       | `.rs`     | `//'`         |
-| Go         | `.go`     | `//'`         |
-| C++        | `.cpp`    | `//'`         |
-| C          | `.c`      | `//'`         |
-| Java       | `.java`   | `//'`         |
-| Scala      | `.scala`  | `//'`         |
-| Ruby       | `.rb`     | `#'`          |
-| Perl       | `.pl`     | `#'`          |
-| PHP        | `.php`    | `//'`         |
+| R          | `.R`      | `#`           |
+| Python     | `.py`     | `#`           |
+| Julia      | `.jl`     | `#`           |
+| Bash       | `.sh`     | `#`           |
+| JavaScript | `.js`     | `//`          |
+| TypeScript | `.ts`     | `//`          |
+| SQL        | `.sql`    | `--`          |
+| Rust       | `.rs`     | `//`          |
+| Go         | `.go`     | `//`          |
+| C++        | `.cpp`    | `//`          |
+| C          | `.c`      | `//`          |
+| Java       | `.java`   | `//`          |
+| Scala      | `.scala`  | `//`          |
+| Ruby       | `.rb`     | `#`           |
+| Perl       | `.pl`     | `#`           |
+| PHP        | `.php`    | `//`          |
 
 ## Are code chunk options included in the extracted scripts?
 
