@@ -34,24 +34,27 @@ local config = {
 local valid_positions = { top = true, bottom = true, custom = true, none = true }
 
 --- File extension and metadata comment prefix for each supported language.
+--- Plain line comments, not knitr-spin `#'` comments: Quarto claims a `.R`
+--- file that starts with a `#' ---` block as a page, so a project's next
+--- render would try to render the script and collide with the page's HTML.
 ---@type table<string, LangSpec>
 local lang_specs = {
-  r          = { ext = ".R",     comment = "#'" },
-  python     = { ext = ".py",    comment = "#'" },
-  julia      = { ext = ".jl",    comment = "#'" },
-  bash       = { ext = ".sh",    comment = "#'" },
-  javascript = { ext = ".js",    comment = "//'" },
-  typescript = { ext = ".ts",    comment = "//'" },
-  sql        = { ext = ".sql",   comment = "--'" },
-  rust       = { ext = ".rs",    comment = "//'" },
-  go         = { ext = ".go",    comment = "//'" },
-  cpp        = { ext = ".cpp",   comment = "//'" },
-  c          = { ext = ".c",     comment = "//'" },
-  java       = { ext = ".java",  comment = "//'" },
-  scala      = { ext = ".scala", comment = "//'" },
-  ruby       = { ext = ".rb",    comment = "#'" },
-  perl       = { ext = ".pl",    comment = "#'" },
-  php        = { ext = ".php",   comment = "//'" },
+  r          = { ext = ".R",     comment = "#" },
+  python     = { ext = ".py",    comment = "#" },
+  julia      = { ext = ".jl",    comment = "#" },
+  bash       = { ext = ".sh",    comment = "#" },
+  javascript = { ext = ".js",    comment = "//" },
+  typescript = { ext = ".ts",    comment = "//" },
+  sql        = { ext = ".sql",   comment = "--" },
+  rust       = { ext = ".rs",    comment = "//" },
+  go         = { ext = ".go",    comment = "//" },
+  cpp        = { ext = ".cpp",   comment = "//" },
+  c          = { ext = ".c",     comment = "//" },
+  java       = { ext = ".java",  comment = "//" },
+  scala      = { ext = ".scala", comment = "//" },
+  ruby       = { ext = ".rb",    comment = "#" },
+  perl       = { ext = ".pl",    comment = "#" },
+  php        = { ext = ".php",   comment = "//" },
 }
 
 --- Code block text collected for each language.
@@ -178,7 +181,6 @@ local function format_yaml_header(meta, lang)
   end
 
   table.insert(lines, comment .. " ---")
-  table.insert(lines, comment .. " ")
 
   return table.concat(lines, "\n") .. "\n"
 end

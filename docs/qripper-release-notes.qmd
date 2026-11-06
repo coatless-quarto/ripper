@@ -13,6 +13,7 @@ format:
 ## Breaking changes
 
 - ripper now requires Quarto 1.11 or later.
+- Script headers use plain comments (`#`, `//`, `--`), so websites re-render without Quarto picking up the generated `.R` scripts as pages.
 
 ## Features
 
