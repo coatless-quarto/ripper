@@ -179,3 +179,7 @@ output-dir: "../scripts"
 
 Ripper's ability to extract code from Quarto documents originated a feature request I submitted in
 [`quarto-dev/quarto-cli` issue #1156](https://github.com/quarto-dev/quarto-cli/issues/1156) back on June 14, 2022.
+
+## License
+
+ripper is licensed under AGPL-3.0-or-later with an exception: what you write and render with ripper stays yours, along with the output, under any terms you like. See [LICENSE](LICENSE) and [LICENSE-EXCEPTION.md](LICENSE-EXCEPTION.md).
